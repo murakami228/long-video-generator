@@ -1,0 +1,59 @@
+{
+    "project_name": "運送業許可 必要な資金額",
+    "theme": "運送業開業",
+    "platform": "YouTube Shorts",
+    "customScript": {
+        "title": "運送業許可に必要な資金額",
+        "title_speech": "運送業許可に必要な資金額を解説します",
+        "slideTemplate": "grid",
+        "sections": [
+            {
+                "id": "intro",
+                "text": "運送業で独立したいけど、許可を取るにはいくら必要なのか。今日は運送業許可に必要な資金額を徹底解説します。",
+                "speaker": "zundamon",
+                "type": "intro"
+            },
+            {
+                "id": "step1",
+                "text": "まず結論から。運送業の許可を取得するには、最低でも600万円から1500万円程度の自己資金が必要です。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step2",
+                "text": "内訳を見ていきましょう。まず車両費。トラック5台以上が必要で、1台あたり100万円から300万円。中古でも最低500万円はかかります。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step3",
+                "text": "次に営業所と車庫の費用。賃貸の場合、敷金礼金や1年分の賃料を確保する必要があり、100万円から200万円程度です。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step4",
+                "text": "さらに保険料と税金。自賠責保険、任意保険、自動車税などで年間50万円から100万円が必要になります。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step5",
+                "text": "重要なポイント。これらの資金は申請時に残高証明で確認されます。借入金ではなく、自己資金として用意が必要です。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "outro",
+                "text": "まとめです。運送業許可には最低600万円以上の自己資金が必要。車両費、営業所費用、保険料などを合計して計画的に準備しましょう。",
+                "speaker": "zundamon",
+                "type": "outro"
+            }
+        ]
+    }
+}

@@ -1,0 +1,114 @@
+.vlookup-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 100px 100px 150px 100px !important;
+    box-sizing: border-box !important;
+    background-color: #fff5f5;
+    /* Slight red background tint */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    /* Reduced gap */
+    width: 100%;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    background: #fff0f2;
+    /* Light red */
+    border: 3px solid #e11d48;
+    /* Red */
+    border-radius: 12px;
+    padding: 12px 25px;
+    /* Compact padding */
+    width: 85%;
+    box-shadow: 0 6px 12px rgba(225, 29, 72, 0.1);
+    opacity: 0;
+    transition: transform 0.3s ease;
+}
+
+.step-item.visible {
+    opacity: 1;
+}
+
+#item-1 {
+    opacity: 0;
+}
+
+#item-2 {
+    opacity: 0;
+}
+
+#item-3 {
+    opacity: 0;
+}
+
+#item-4 {
+    opacity: 0;
+}
+
+.step-number {
+    background: #e11d48;
+    color: white;
+    font-size: 32px;
+    /* Smaller */
+    font-weight: bold;
+    width: 50px;
+    /* Smaller */
+    height: 50px;
+    /* Smaller */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex-grow: 1;
+}
+
+.step-content h3 {
+    margin: 0;
+    font-size: 28px;
+    /* Smaller */
+    color: #be123c;
+}
+
+.step-content p {
+    margin: 4px 0;
+    font-size: 20px;
+    /* Smaller */
+    color: #555;
+    font-weight: bold;
+}
+
+.code-example {
+    font-family: 'Consolas', 'Monaco', monospace;
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 6px 15px;
+    border-radius: 6px;
+    font-size: 18px;
+    /* Smaller */
+    margin-top: 5px;
+}
+
+.code-example strong {
+    color: #f43f5e;
+}
+
+.step-arrow {
+    font-size: 28px;
+    color: #fda4af;
+    line-height: 1;
+}

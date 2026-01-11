@@ -1,0 +1,46 @@
+{
+    "project_name": "白ナンバーダンプ問題",
+    "theme": "法律解説",
+    "platform": "YouTube Shorts",
+    "customScript": {
+        "title": "白ナンバーダンプは違法？",
+        "title_speech": "白ナンバーダンプは違法？",
+        "slideTemplate": "split",
+        "sections": [
+            {
+                "id": "intro",
+                "text": "建設現場でよく見る白ナンバーのダンプ。実はこれ、違法の可能性があるんです。",
+                "speaker": "zundamon",
+                "type": "intro"
+            },
+            {
+                "id": "step1",
+                "text": "白ナンバーは自家用。自分の荷物しか運べません。他人の荷物を運賃をもらって運ぶのはアウトです。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step2",
+                "text": "緑ナンバーは事業用。国の許可を取れば、他人の荷物を有償で運べます。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step3",
+                "text": "違反した場合の罰則は重いです。運んだ側は3年以下の懲役、または300万円以下の罰金。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step4",
+                "text": "依頼した側も幇助犯として逮捕される可能性があります。知らなかったでは済まされません。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            }
+        ]
+    }
+}

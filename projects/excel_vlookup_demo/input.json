@@ -1,0 +1,46 @@
+{
+    "project_name": "Excel VLOOKUP Master",
+    "theme": "Excel",
+    "platform": "YouTube Shorts",
+    "customScript": {
+        "title": "VLOOKUP完全マスター",
+        "title_speech": "ブイルックアップ完全マスター",
+        "slideTemplate": "grid",
+        "sections": [
+            {
+                "id": "intro",
+                "text": "VLOOKUP関数、まだ手入力してませんか？４つの引数さえ覚えれば一瞬です。",
+                "speaker": "zundamon",
+                "type": "intro"
+            },
+            {
+                "id": "step1",
+                "text": "１つ目は検索値。何を探したいか、セルを指定します。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step2",
+                "text": "２つ目は範囲。探すデータ全体を選びます。絶対参照を忘れずに。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step3",
+                "text": "３つ目は列番号。取り出したいデータが左から何番目か指定します。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step4",
+                "text": "最後は検索方法。完全一致ならゼロ、と覚えましょう。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            }
+        ]
+    }
+}

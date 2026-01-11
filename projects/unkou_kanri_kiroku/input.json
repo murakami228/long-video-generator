@@ -1,0 +1,59 @@
+{
+    "project_name": "運行管理者試験対策 業務の記録",
+    "theme": "資格試験",
+    "platform": "YouTube Shorts",
+    "customScript": {
+        "title": "記録の保存期間を覚えよう",
+        "title_speech": "記録の保存期間を覚えよう",
+        "slideTemplate": "grid",
+        "sections": [
+            {
+                "id": "intro",
+                "text": "運行管理者試験で頻出の「記録の保存期間」。1年と3年、どっちがどっちか迷いますよね。今日はこれを完璧に覚えましょう。",
+                "speaker": "zundamon",
+                "type": "intro"
+            },
+            {
+                "id": "step1",
+                "text": "まず1年間保存するもの。業務の記録、運行記録計による記録、そして運行指示書。これらは1年間です。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step2",
+                "text": "次に3年間保存するもの。事故の記録と運転者台帳。この2つは3年間保存が必要です。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step3",
+                "text": "試験でよく出る引っかけポイント。事故の記録には物損事故も含まれます。人身事故だけではありません。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step4",
+                "text": "もう1つの頻出ポイント。運行指示書は「運行終了日から」1年間保存。計画日からではないので注意してください。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "step5",
+                "text": "覚え方のコツ。「事故と台帳は重いから3年」と覚えましょう。責任が重い記録ほど長く保存が必要です。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true
+            },
+            {
+                "id": "outro",
+                "text": "まとめです。1年保存は業務記録・運行記録・運行指示書。3年保存は事故記録と運転者台帳。試験前にしっかり確認しておきましょう。",
+                "speaker": "zundamon",
+                "type": "outro"
+            }
+        ]
+    }
+}

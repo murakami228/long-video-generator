@@ -1,0 +1,180 @@
+{
+    "topic": "エクセルで分析を爆速化！予測ツール3選",
+    "customScript": {
+        "title_split": [
+            "エクセルで",
+            "分析を爆速化！",
+            "プロの予測ツール3選"
+        ],
+        "title_speech": "エクセルでぶんせきをばくそくか！プロのよそくツールさんせん！",
+        "sections": [
+            {
+                "text": "「利益をあと百万円\n増やすには\n何をどれだけ売ればいい？」",
+                "speechText": "りえきをあとひゃくまんえんふやすには、何をどれだけうればいい？",
+                "visual": "A business consultant looking at a chart with a gap between 'Current' and 'Target'.",
+                "highlight": [
+                    "目標値を逆算"
+                ]
+            },
+            {
+                "text": "1. ゴールシーク\n目標から必要な数値を逆算",
+                "speechText": "ひとつめ、ゴールシーク. もくひょうからひつようなすうちをぎゃくさん！",
+                "visual": "A target flag 'Goal' with a mathematical arrow pointing backwards to a variable 'x'.",
+                "highlight": [
+                    "ゴールシーク"
+                ]
+            },
+            {
+                "text": "計算結果を見ながら手動で\n数字を何回も\n入れ替えてない？",
+                "speechText": "けいさんけっかをみながら、てどうで、すうじをなんかいもいれかえてない？",
+                "visual": "A person frantically typing different numbers like '10', '15', '12' into a cell to hit a target.",
+                "highlight": [
+                    "手動入れ替え"
+                ]
+            },
+            {
+                "text": "それ 日が暮れても\nピッタリの数値は\n出ませんよ！",
+                "speechText": "それ、ひがくれてもピッタリのすうじはでませんよ！",
+                "visual": "The sun setting over the office, person looking dizzy from guess-and-test math.",
+                "highlight": [
+                    "日が暮れる"
+                ]
+            },
+            {
+                "text": "ゴールシークなら\n目標値を入れるだけで\n変数を自動算出だ",
+                "speechText": "ゴールシークなら、もくひょうちをいれるだけで、へんすうをじどうさんしゅつだ！",
+                "visual": "The 'Goal Seek' dialog box appearing, and a cell value spinning fast until it hits the target.",
+                "highlight": [
+                    "自動算出"
+                ]
+            },
+            {
+                "text": "一瞬で完璧なプランが完成\nこれぞデータサイエンスの\n力だぜ",
+                "speechText": "いっしゅんでかんぺきなプランがかんせい！これぞデータサイエンスのちカラーだぜ",
+                "visual": "The worker presenting a perfect financial forecast with a confident stance.",
+                "highlight": [
+                    "完璧なプラン"
+                ]
+            },
+            {
+                "text": "企画の精度が格段にアップ\n数字で語れるプロになろう",
+                "speechText": "きかくのせいどがかくだんにアップ！すうじでかたれるプロになろう",
+                "visual": "A manager nodding in agreement as a clear numeric goal is presented.",
+                "highlight": [
+                    "企画の精度"
+                ]
+            },
+            {
+                "text": "2. シナリオの登録と管理\n複数の予測を一箇所で保存",
+                "speechText": "ふたつめ、シナリオのとうろくとかんり. ふくすうのよそくいっかしょでほぞん",
+                "visual": "Three different versions of a table (Best, Worst, Average) floating in the air.",
+                "highlight": [
+                    "シナリオ管理"
+                ]
+            },
+            {
+                "text": "「最悪のケースと\n最高の時 両方の予算案を\n作って」",
+                "speechText": "さいあくのケースと、さいこうのとき、りょうほうのよさんあんをつくって",
+                "visual": "A boss asking for multiple versions of a financial report, worker looking worried.",
+                "highlight": [
+                    "複数の予算案"
+                ]
+            },
+            {
+                "text": "ファイルを何個も作って\n管理するのは\nもうやめよう！",
+                "speechText": "ファイルをなんこもつくって、かんりするのはもうやめよう！",
+                "visual": "A folder filled with files named 'Plan_A', 'Plan_A_v2', 'Plan_B_Final'.",
+                "highlight": [
+                    "ファイル分断"
+                ]
+            },
+            {
+                "text": "シナリオ管理なら\n数値のパターンを\n切り替えて表示だ！",
+                "speechText": "シナリオかんりなら、すうちのパターンをきりかえてひょうじだ！",
+                "visual": "A dropdown menu switching the whole table between 'Optimistic' and 'Pessimistic' instantly.",
+                "highlight": [
+                    "パターン切替"
+                ]
+            },
+            {
+                "text": "比較表もボタン一つで作れ\n意思決定が爆速になる\n神機能だぜ",
+                "speechText": "ひかくひょうもボタンひとつでつくれる！いしけっていがばくそくになるしんきのうだぜ",
+                "visual": "A summary report showing all scenarios side-by-side appearing magically.",
+                "highlight": [
+                    "意思決定爆速"
+                ]
+            },
+            {
+                "text": "分析のプロとして\n一目置かれる！\nスマートな提案を繰り出そう",
+                "speechText": "ぶんせきのプロとしていちめおかれる！スマートなていあんをくりだそう",
+                "visual": "The worker giving a presentation using a high-tech holographic comparison chart.",
+                "highlight": [
+                    "スマートな提案"
+                ]
+            },
+            {
+                "text": "3. Alt + A + W + G\n分析ツールを爆速で起動",
+                "speechText": "みっつめ、オルト・エー・ダブリュー・ジー. ぶんせきツールをショートカットで",
+                "visual": "A keyboard shortcut guide highlighting the 'Data' tab and its analysis tools.",
+                "highlight": [
+                    "時短コマンド"
+                ]
+            },
+            {
+                "text": "リボンの奥深くにあるツール\nマウスで探してイライラ？",
+                "speechText": "リボンのおくぶかくにあるツール、マウスでさがしてイライラ？",
+                "visual": "A mouse cursor wandering through many tabs in the menu ribbon.",
+                "highlight": [
+                    "マウスで探す"
+                ]
+            },
+            {
+                "text": "迷っているその間に後輩が\n仕事を終わらせちゃいます\nよ！",
+                "speechText": "まよっている、そのあいだにこうはいが、しごとをおわらせちゃいますよ！",
+                "visual": "A younger colleague walking away from their desk, already finished.",
+                "highlight": [
+                    "後輩に負ける"
+                ]
+            },
+            {
+                "text": "キーを流れるように叩けば\nコンマ一秒で起動だ！",
+                "speechText": "キーをながれるようにたたけば、コンマイちびょうで、ツールがきどうだ！",
+                "visual": "A hand tapping the keys rapidly and the 'What-If Analysis' menu popping open.",
+                "highlight": [
+                    "コンマ一秒"
+                ]
+            },
+            {
+                "text": "この速さが信頼に変わる！\nエクセルとの一体感を\n味わおうぜ",
+                "speechText": "このはやさがしんらいにかわる！エクセルとのいったいかんをあじわおうぜ",
+                "visual": "A futuristic digital grid pulsing with energy as the worker interacts with it.",
+                "highlight": [
+                    "一体感"
+                ]
+            },
+            {
+                "text": "圧倒的なスピード感で\n周りと差をつけて\nいこうぜ！",
+                "speechText": "あっとうてきなスピードかんで、まわりとさをつけていこうぜ！",
+                "visual": "The worker moving at super-speed, leaving a trial of light.",
+                "highlight": [
+                    "スピード感"
+                ]
+            },
+            {
+                "text": "役に立ったら\n「いいね」で教えて！",
+                "speechText": "やくにたったらいいねでおしえて！",
+                "visual": "A heart icon popping up on a mobile screen, vibrant and welcoming.",
+                "highlight": [
+                    "いいね"
+                ]
+            }
+        ]
+    },
+    "youtube": {
+        "title": "【エクセル】分析を爆速化！予測ツール3選【ゴールシーク/シナリオ管理/時短コマンド】",
+        "description": "「利益をあと百万円増やすには何をどれだけ売ればいい？」で困っていませんか？\nそれ 日が暮れてもピッタリの数値は出ませんよ！…その作業、この動画で紹介する技を使えば一瞬で終わります！\n\n今回は、エクセルの作業を劇的に効率化する「予測ツール3選」を3つ紹介します。\nこれらを使いこなして、業務効率をアップさせましょう！\n\n■紹介するアイテム\n① ゴールシーク：計算結果を見ながら手動で数字を何回も入れ替えてない？\n② シナリオ管理：ファイルを何個も作って管理するのはもうやめよう\n③ 時短コマンド：迷っているその間に後輩が仕事を終わらせちゃいますよ\n\nこの動画が役に立ったら「いいね」とチャンネル登録をお願いします！\n\n■音声\nVOICEVOX:ずんだもん\n\n#エクセル #Excel #業務効率化 #時短テクニック #ゴールシーク #シナリオ管理 #時短コマンド #ずんだもん",
+        "tags": [],
+        "privacyStatus": "private",
+        "publishAt": "2026-01-08T11:00:00.000Z"
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "project_name": "ギター ダイアトニックコード",
+    "theme": "ギター音楽理論",
+    "platform": "YouTube Shorts",
+    "customScript": {
+        "title": "ダイアトニックコードをギターで覚えよう",
+        "title_speech": "ダイアトニックコードをギターで覚えよう",
+        "slideTemplate": "guitar",
+        "sections": [
+            {
+                "id": "intro",
+                "text": "ギター弾いてるけど、コード進行がよく分からない。そんなあなたに、今日はダイアトニックコードを解説します。",
+                "speaker": "zundamon",
+                "type": "intro"
+            },
+            {
+                "id": "step1",
+                "text": "ダイアトニックコードとは、1つのキーの中で使える7つの基本コードのこと。これを覚えれば、コード進行が一気に理解できます。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "chord": "overview"
+            },
+            {
+                "id": "step2",
+                "text": "キーがCメジャーの場合を見てみましょう。最初のコードはC。ドミソの和音で、曲の始まりや終わりによく使われます。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "chord": "C"
+            },
+            {
+                "id": "step3",
+                "text": "次はディーマイナー。2番目のコードで、少し切ない響きが特徴です。サビへの橋渡しでよく使われます。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "chord": "Dm"
+            },
+            {
+                "id": "step4",
+                "text": "3番目はイーマイナー。暗めの響きで、バラードやポップスでよく登場します。押さえ方も簡単ですね。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "chord": "Em"
+            },
+            {
+                "id": "step5",
+                "text": "4番目はエフ。初心者の壁と呼ばれますが、曲に明るさと緊張感を加える重要なコードです。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "chord": "F"
+            },
+            {
+                "id": "step6",
+                "text": "5番目はジー。ドミナントと呼ばれ、次のコードに進む力強い推進力を持っています。C に戻りたくなる響きです。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "chord": "G"
+            },
+            {
+                "id": "step7",
+                "text": "6番目はエーマイナー。相対的短調のコードで、切なさや哀愁を表現するのに最適です。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "chord": "Am"
+            },
+            {
+                "id": "outro",
+                "text": "まとめです。ダイアトニックコードは、C、D m、E m、F、G、A m の6つを覚えれば、ほとんどの曲に対応できます。ぜひ練習してみてください。",
+                "speaker": "zundamon",
+                "type": "outro"
+            }
+        ]
+    }
+}

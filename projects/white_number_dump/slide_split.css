@@ -1,0 +1,145 @@
+.number-slide {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 50px 50px 150px 50px !important;
+    box-sizing: border-box !important;
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.left-panel {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.comparison-box {
+    width: 100%;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+.white-box {
+    background: linear-gradient(135deg, #4a4a4a, #2d2d2d);
+    border: 4px solid #888;
+}
+
+.green-box {
+    background: linear-gradient(135deg, #065f46, #047857);
+    border: 4px solid #34d399;
+}
+
+.plate {
+    width: 100px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 900;
+    margin: 0 auto 15px auto;
+    border: 3px solid;
+}
+
+.white-plate {
+    background: white;
+    color: #333;
+    border-color: #333;
+}
+
+.green-plate {
+    background: #22c55e;
+    color: white;
+    border-color: white;
+}
+
+.comparison-box h2 {
+    font-size: 32px;
+    margin: 0 0 5px 0;
+}
+
+.comparison-box p {
+    font-size: 20px;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.vs-badge {
+    background: #ef4444;
+    color: white;
+    font-size: 28px;
+    font-weight: 900;
+    padding: 10px 25px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(239, 68, 68, 0.4);
+}
+
+.right-panel {
+    flex: 1;
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.alert-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-left: 8px solid #3b82f6;
+    opacity: 0;
+}
+
+.alert-item.danger {
+    border-left-color: #ef4444;
+    background: #fef2f2;
+}
+
+#item-1,
+#item-2,
+#item-3,
+#item-4 {
+    opacity: 0;
+}
+
+.alert-icon {
+    font-size: 40px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.alert-text h3 {
+    font-size: 26px;
+    color: #1e293b;
+    margin: 0 0 5px 0;
+}
+
+.alert-text p {
+    font-size: 20px;
+    color: #475569;
+    margin: 0;
+}
+
+.alert-text strong {
+    color: #dc2626;
+    font-weight: 700;
+}

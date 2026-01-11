@@ -1,0 +1,135 @@
+.record-slide {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 60px 80px 150px 80px !important;
+    box-sizing: border-box !important;
+    background: linear-gradient(135deg, #1e3a5f 0%, #0f2744 100%);
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+}
+
+.slide-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.slide-header h1 {
+    font-size: 56px;
+    margin: 0;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    flex: 1;
+}
+
+.grid-section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.year-1 {
+    border: 3px solid #3b82f6;
+}
+
+.year-3 {
+    border: 3px solid #ef4444;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.period-badge {
+    font-size: 36px;
+    font-weight: 900;
+    padding: 12px 40px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.period-badge.blue {
+    background: #3b82f6;
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
+
+.period-badge.red {
+    background: #ef4444;
+    box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4);
+}
+
+.record-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.record-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    color: #1e293b;
+    padding: 18px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    position: relative;
+}
+
+#item-1,
+#item-2,
+#item-3,
+#item-4,
+#item-5,
+#item-6 {
+    opacity: 0;
+}
+
+.record-icon {
+    font-size: 32px;
+    margin-right: 15px;
+}
+
+.record-name {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.note {
+    position: absolute;
+    right: 20px;
+    font-size: 16px;
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.tip-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #fbbf24, #f59e0b);
+    padding: 20px 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 10px 25px rgba(251, 191, 36, 0.3);
+    opacity: 0;
+}
+
+.tip-icon {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.tip-text {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1e293b;
+}
