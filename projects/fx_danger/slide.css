@@ -1,0 +1,138 @@
+/* Unified Design System based on 01_std_list */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap');
+
+:root {
+    --primary-color: #d32f2f; /* Danger Red */
+    --accent-color: #ffAB00;
+    --bg-gradient: linear-gradient(135deg, #1a1a1a 0%, #330000 100%);
+    --text-main: #ffffff;
+    --text-sub: #cfd8dc;
+    --card-bg: rgba(255, 255, 255, 0.1);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 60px 80px 180px 80px !important;
+    box-sizing: border-box !important;
+    background: var(--bg-gradient);
+    font-family: 'Noto Sans JP', sans-serif;
+    color: var(--text-main);
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-header {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.slide-header h1 {
+    font-size: 72px;
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: 900;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.slide-number {
+    font-size: 80px;
+    font-weight: 900;
+    color: rgba(211, 47, 47, 0.2);
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    line-height: 1;
+}
+
+.animate-item {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+}
+
+.list-item {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    border-left: 10px solid var(--primary-color);
+    backdrop-filter: blur(10px);
+}
+
+.item-badge {
+    background: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+.item-content {
+    flex: 1;
+}
+
+.item-content h2 {
+    font-size: 40px;
+    margin: 0 0 5px 0;
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.item-content p {
+    font-size: 24px;
+    margin: 0;
+    color: var(--text-sub);
+}
+
+.icon-large {
+    font-size: 60px !important;
+    color: var(--primary-color);
+    margin-left: 20px;
+    opacity: 0.8;
+}
+
+/* Material Symbols Class */
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}

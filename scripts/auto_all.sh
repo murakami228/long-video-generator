@@ -20,13 +20,6 @@ if ! curl -s http://localhost:50021/version > /dev/null; then
     exit 1
 fi
 
-# Python venvチェック
-if [ ! -d "./venv" ]; then
-    echo "❌ エラー: Python仮想環境 (./venv) が見つかりません。"
-    echo "画像生成には仮想環境が必要です。"
-    exit 1
-fi
-
 # projects フォルダの存在チェック
 PROJECTS_DIR="./projects"
 if [ ! -d "$PROJECTS_DIR" ]; then
@@ -46,10 +39,9 @@ else
     echo "📂 指定されたプロジェクト (${PROJECTS}) を対象に開始します。"
 fi
 
-# 2. 画像生成
-echo ""
-echo "🎨 [Step 1/4] 画像の一括生成を開始します..."
-./venv/bin/python3 scripts/generate_images.py $PROJECTS
+# 2. (スキップ) 画像生成
+# echo "🎨 [Step 1/4] 画像の一括生成はスキップされます (機能削除済み)"
+
 
 # 3. 音声生成 + ノーマライズ
 echo ""

@@ -1,54 +1,66 @@
-# Remotion video
+# HTML Slide Video Generator
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.apng">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+HTMLとCSSで作成したスライドを、Remotionを使ってショート動画（縦型）に変換するツールです。
 
-Welcome to your Remotion project!
+## 特徴
+- **HTML/CSSでデザイン**: 使い慣れたWeb技術でスライドをデザインできます。
+- **自動音声同期**: `input.json` に記述した台本からAI音声（VoiceVox）を生成し、スライドの表示タイミングを自動で合わせます。
+- **ステップアニメーション**: スライド内の箇条書きなどを、台本の進行に合わせて順番に表示できます。
 
-## Commands
+## 使い方
 
-**Install Dependencies**
+1. **プロジェクト作成**
+   `projects/` フォルダ内に新しいフォルダを作成します。（例: `projects/01_my_slide`）
 
-```console
-npm i
+2. **必須ファイルの配置**
+   作成したフォルダに以下の3つのファイルを配置します。
+   - `input.json`: 台本と設定
+   - `slide_default.html`: スライドのHTML構造
+   - `slide_default.css`: スライドのスタイル
+   
+   ※ `projects/00_example_slide` をコピーして使うと便利です。
+
+3. **動画生成**
+   以下のコマンドを実行します。
+   ```bash
+   ./scripts/auto_all.sh 01
+   ```
+   （`01` はプロジェクトフォルダ名の一部）
+
+4. **出力確認**
+   `out/01_my_slide.mp4` に動画が出力されます。
+
+## input.json の書き方
+
+```json
+{
+    "project_name": "プロジェクト名",
+    "theme": "テーマ",
+    "platform": "YouTube Shorts",
+    "customScript": {
+        "title": "タイトル",
+        "title_speech": "読み上げ用タイトル",
+        "slideTemplate": "default",
+        "sections": [
+            {
+                "id": "intro",
+                "text": "冒頭の挨拶など",
+                "speaker": "zundamon",
+                "type": "intro"
+            },
+            {
+                "id": "step1",
+                "text": "1つ目のポイント",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true  // trueにするとスライドの次の項目が表示されます
+            }
+        ]
+    }
+}
 ```
 
-**Start Preview**
-
-```console
-npm run dev
-```
-
-**Render video**
-
-```console
-npx remotion render
-```
-
-**Upgrade Remotion**
-
-```console
-npx remotion upgrade
-```
-
-## Docs
-
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+## ドキュメント
+詳細は `docs/` フォルダ内のドキュメントを参照してください。
+- `docs/slide_creation_rules.md`: スライド（HTML/CSS）の作成ルール
+- `docs/script_generation_rules.md`: input.json の作成ルール

@@ -153,7 +153,8 @@ export const MarpReactSlide: React.FC<MarpReactSlideProps> = ({ htmlContent, cus
     const dynamicStyles = steps.map((stepFrame, index) => {
         const itemIndex = index + 1;
         const show = frame >= stepFrame;
-        return show ? `#item-${itemIndex} { opacity: 1 !important; transform: none !important; }` : '';
+        // Use attribute selector to match IDs starting with "item-N" (e.g. item-1_L, item-1_R)
+        return show ? `[id^="item-${itemIndex}"] { opacity: 1 !important; transform: none !important; }` : '';
     }).join('\n');
 
     const showHighlight = frame >= highlightStep;
@@ -161,7 +162,7 @@ export const MarpReactSlide: React.FC<MarpReactSlideProps> = ({ htmlContent, cus
     const finalDynamicStyles = dynamicStyles + highlightStyle;
 
     return (
-        <AbsoluteFill style={{ backgroundColor: 'white' }}>
+        <AbsoluteFill>
             {/* <style>{defaultStyles}</style> Removed defaultStyles to rely on customCss */}
             {customCss && <style>{customCss}</style>}
             <style>{finalDynamicStyles}</style>

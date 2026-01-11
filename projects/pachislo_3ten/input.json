@@ -1,0 +1,87 @@
+{
+    "project_name": "パチスロ三店方式",
+    "theme": "社会・仕組み",
+    "platform": "YouTube Shorts",
+    "customScript": {
+        "title": "パチンコが合法な理由 三店方式の仕組み",
+        "title_speech": "パチンコが合法な理由 三店方式の仕組みについて解説します。",
+        "title_split": [
+            "パチンコが合法な理由",
+            "三店方式の仕組み"
+        ],
+        "sections": [
+            {
+                "id": "intro",
+                "text": "賭博は禁止なのに なぜパチンコは換金できるのか",
+                "speechText": "日本で賭博は禁止されていますが なぜパチンコは換金できるのでしょうか。その鍵を握るのが 三店方式という仕組みです。",
+                "speaker": "zundamon",
+                "type": "intro"
+            },
+            {
+                "id": "step1",
+                "text": "1 ホールで出玉を特殊景品に交換する",
+                "speechText": "手順の1つ目。まずホールで 出玉を金地金などの特殊景品に交換します。店が直接現金を渡すことはありません。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "highlight": [
+                    "特殊景品"
+                ]
+            },
+            {
+                "id": "step2",
+                "text": "2 景品交換所で特殊景品を現金化する",
+                "speechText": "手順の2つ目。次に景品交換所へ行き 特殊景品を現金で買い取ってもらいます。交換所は店とは無関係の 第三者の扱いです。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "highlight": [
+                    "景品交換所",
+                    "現金化"
+                ]
+            },
+            {
+                "id": "step3",
+                "text": "3 景品問屋が交換所から景品を買い取る",
+                "speechText": "手順の3つ目。問屋が交換所から景品を買い取り ホールに卸します。こうして景品が循環することで 仕組みが成立しています。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "highlight": [
+                    "景品問屋"
+                ]
+            },
+            {
+                "id": "step4",
+                "text": "店側は客がどこで換金したか知らない建前",
+                "speechText": "店と交換所は物理的に近くにありますが 法律上は独立した別組織です。店側は 客がどこで換金したか知らない という建前です。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": false
+            },
+            {
+                "id": "step5",
+                "text": "この独立した三店の関係により 適法性が保たれる",
+                "speechText": "この三店の関係によって 実質的な換金を可能にしつつ 適法性を保っているのが 日本独自のパチンコ文化なのです。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": false
+            },
+            {
+                "id": "step6",
+                "text": "正しく仕組みを理解して 健全に遊びましょう",
+                "speechText": "仕組みを正しく理解した上で 健全に楽しみましょう。のめり込みには十分注意してください。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": false
+            },
+            {
+                "id": "outro",
+                "text": "パチンコの謎をもっと知ろう 詳細は動画をチェック",
+                "speechText": "パチンコの謎をもっと知っていきましょう。チャンネル登録もよろしくお願いします。",
+                "speaker": "zundamon",
+                "type": "outro"
+            }
+        ]
+    }
+}

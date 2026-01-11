@@ -1,0 +1,78 @@
+/* Unified Design System */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&display=swap');
+
+:root {
+    --primary-color: #0052cc;
+    /* Professional Blue */
+    --accent-color: #ffAB00;
+    /* Attention Yellow */
+    --bg-gradient: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    --text-main: #102a43;
+    --text-sub: #486581;
+    --card-bg: #ffffff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 60px 80px 160px 80px !important;
+    /* Bottom padding 160px for captions */
+    box-sizing: border-box !important;
+    background: var(--bg-gradient);
+    font-family: 'Noto Sans JP', sans-serif;
+    color: var(--text-main);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header Component */
+.slide-header {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.slide-header h1 {
+    font-size: 64px;
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.slide-number {
+    font-size: 100px;
+    font-weight: 900;
+    color: rgba(0, 82, 204, 0.1);
+    /* Watermark style */
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    line-height: 1;
+}
+
+/* Common Animations */
+.animate-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+/* Utility to override specific text colors if needed */
+.highlight {
+    color: var(--primary-color);
+}
+
+.accent {
+    color: var(--accent-color);
+}

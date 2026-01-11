@@ -8,17 +8,12 @@ import generatedData from '../../public/data.json';
 
 const data = generatedData as VideoData;
 
-export const MarpExperiment: React.FC = () => {
-    // Determine steps dynamically from scenes
-    // We assume the first scene is Title, second is Intro.
-    // Slide items appear starting from scene 2 (Level 1), 3 (Level 2), 4 (Level 3).
-    // Indices in data.scenes:
-    // 0: Title
-    // 1: Intro (Text)
-    // 2: Level 1 (Slide Item 1)
-    // 3: Level 2 (Slide Item 2)
-    // 4: Level 3 (Slide Item 3)
+const resolveSrc = (src: string) => {
+    if (src.startsWith('http')) return src;
+    return staticFile(src.startsWith('/') ? src.substring(1) : src);
+};
 
+export const MarpExperiment: React.FC = () => {
     let currentFrameCount = 0;
     const sceneStartFrames: number[] = [];
 
@@ -27,44 +22,32 @@ export const MarpExperiment: React.FC = () => {
         currentFrameCount += scene.durationInFrames;
     });
 
-    // Custom mapping for steps
-    // If slideSteps is provided in data, use it.
-    // Otherwise fallback to scene start frames (legacy behavior for excel_benefits_demo)
-
     let steps: number[] = [];
     if (data.slideSteps && data.slideSteps.length > 0) {
         steps = data.slideSteps;
-    } else {
-        // Fallback for excel_benefits_demo structure
-        steps = [
-            sceneStartFrames[2] || 0,
-            sceneStartFrames[3] || 0,
-            sceneStartFrames[4] || 0
-        ];
     }
-
-    // Highlight logic: halfway through Scene 3
-    const scene3Start = sceneStartFrames[3] || 0;
-    const scene3Duration = data.scenes[3]?.durationInFrames || 0;
-    const highlightStep = scene3Start + Math.floor(scene3Duration / 2);
 
     const htmlContent = data.slideHtml || '';
     const customCss = data.customCss;
 
     return (
-        <AbsoluteFill>
-            {/* Audio Loop ... */}
+        <AbsoluteFill className="bg-white">
+            {/* BGM */}
+            {data.bgmUrl && (
+                <Audio
+                    src={resolveSrc(data.bgmUrl)}
+                    volume={0.2}
+                    loop
+                />
+            )}
+
+            {/* Audio Series */}
             {data.scenes.map((scene, index) => {
-                // ...
-                const audioSrc = scene.audioUrl ?
-                    (scene.audioUrl.startsWith('/') ? scene.audioUrl.substring(1) : scene.audioUrl)
-                    : '';
-
-                if (!audioSrc) return null;
-
+                if (!scene.audioUrl) return null;
+                const src = resolveSrc(scene.audioUrl);
                 return (
                     <Sequence key={`audio-${index}`} from={sceneStartFrames[index]} durationInFrames={scene.durationInFrames}>
-                        <Audio src={staticFile(audioSrc)} />
+                        <Audio src={src} />
                     </Sequence>
                 );
             })}
@@ -74,7 +57,6 @@ export const MarpExperiment: React.FC = () => {
                 htmlContent={htmlContent}
                 customCss={customCss}
                 steps={steps}
-                highlightStep={highlightStep}
             />
 
             {/* Captions Overlay */}

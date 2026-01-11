@@ -26,7 +26,7 @@ try {
     // Run Remotion Render
     // We assume Root.tsx reads from public/data.json, which build.ts updates.
     // So the workflow is: build -> render.
-    execSync(`npx remotion render ShortsVideo "${outputFile}"`, { stdio: 'inherit' });
+    execSync(`npx remotion render MarpExperiment "${outputFile}"`, { stdio: 'inherit' });
     console.log("Render complete!");
 } catch (e) {
     console.error("Render failed", e);

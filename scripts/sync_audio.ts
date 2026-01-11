@@ -176,7 +176,8 @@ async function processProject(projectSlug: string, isLast: boolean, projectsBase
             durationInFrames: durationFrames,
             audioUrl: `/generated_assets/${currentProjectName}/${audioName}`,
             highlight: section.highlight || [],
-            markdown: section.markdown // Pass markdown if needed (though we use image)
+            markdown: section.markdown, // Pass markdown if needed (though we use image)
+            step: section.step // Pass step property for slide animation
         });
 
         captions.push({
@@ -354,6 +355,14 @@ async function main() {
     }
 
     console.log("\nすべての処理が完了しました！");
+
+    // Automatically open preview (macOS)
+    try {
+        console.log("  🚀 Opening preview in browser...");
+        execSync('open "http://localhost:3000/?composition=MarpExperiment"');
+    } catch (e) {
+        // Ignore errors if browser open fails
+    }
 }
 
 main();

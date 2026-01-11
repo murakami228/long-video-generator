@@ -11,6 +11,7 @@ export type Scene = {
 
   // For 'slide' type
   markdown?: string;      // Markdown content for Marp
+  step?: boolean;         // For slide animation steps
 };
 
 export type Captions = {

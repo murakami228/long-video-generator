@@ -1,145 +1,145 @@
 {
-  "bgmUrl": "/generated_assets/guitar_diatonic_chords/bgm.wav",
+  "bgmUrl": "/generated_assets/pachislo_3ten/bgm.wav",
   "scenes": [
     {
-      "text": "ダイアトニックコードをギターで覚えよう",
+      "text": "パチンコが合法な理由 三店方式の仕組み",
       "imageUrl": "https://placehold.co/1080x1920/007ACC/FFFFFF/png?text=Title",
-      "durationInFrames": 85,
-      "audioUrl": "/generated_assets/guitar_diatonic_chords/title.mp3",
+      "durationInFrames": 153,
+      "audioUrl": "/generated_assets/pachislo_3ten/title.mp3",
       "highlight": []
     },
     {
       "type": "intro",
-      "text": "ギター弾いてるけど、コード進行がよく分からない。そんなあなたに、今日はダイアトニックコードを解説します。",
+      "text": "賭博は禁止なのに なぜパチンコは換金できるのか",
       "imageUrl": "https://placehold.co/1920x1080/007ACC/FFFFFF/png?text=intro",
-      "durationInFrames": 211,
-      "audioUrl": "/generated_assets/guitar_diatonic_chords/0.mp3",
+      "durationInFrames": 254,
+      "audioUrl": "/generated_assets/pachislo_3ten/0.mp3",
       "highlight": []
     },
     {
       "type": "content",
-      "text": "ダイアトニックコードとは、1つのキーの中で使える7つの基本コードのこと。これを覚えれば、コード進行が一気に理解できます。",
-      "imageUrl": "/generated_assets/guitar_diatonic_chords/placeholder.png",
-      "durationInFrames": 253,
-      "audioUrl": "/generated_assets/guitar_diatonic_chords/1.mp3",
-      "highlight": []
+      "text": "1 ホールで出玉を特殊景品に交換する",
+      "imageUrl": "/generated_assets/pachislo_3ten/placeholder.png",
+      "durationInFrames": 259,
+      "audioUrl": "/generated_assets/pachislo_3ten/1.mp3",
+      "highlight": [
+        "特殊景品"
+      ],
+      "step": true
     },
     {
       "type": "content",
-      "text": "キーがCメジャーの場合を見てみましょう。最初のコードはC。ドミソの和音で、曲の始まりや終わりによく使われます。",
-      "imageUrl": "/generated_assets/guitar_diatonic_chords/placeholder.png",
-      "durationInFrames": 232,
-      "audioUrl": "/generated_assets/guitar_diatonic_chords/2.mp3",
-      "highlight": []
+      "text": "2 景品交換所で特殊景品を現金化する",
+      "imageUrl": "/generated_assets/pachislo_3ten/placeholder.png",
+      "durationInFrames": 299,
+      "audioUrl": "/generated_assets/pachislo_3ten/2.mp3",
+      "highlight": [
+        "景品交換所",
+        "現金化"
+      ],
+      "step": true
     },
     {
       "type": "content",
-      "text": "次はディーマイナー。2番目のコードで、少し切ない響きが特徴です。サビへの橋渡しでよく使われます。",
-      "imageUrl": "/generated_assets/guitar_diatonic_chords/placeholder.png",
-      "durationInFrames": 223,
-      "audioUrl": "/generated_assets/guitar_diatonic_chords/3.mp3",
-      "highlight": []
+      "text": "3 景品問屋が交換所から景品を買い取る",
+      "imageUrl": "/generated_assets/pachislo_3ten/placeholder.png",
+      "durationInFrames": 270,
+      "audioUrl": "/generated_assets/pachislo_3ten/3.mp3",
+      "highlight": [
+        "景品問屋"
+      ],
+      "step": true
     },
     {
       "type": "content",
-      "text": "3番目はイーマイナー。暗めの響きで、バラードやポップスでよく登場します。押さえ方も簡単ですね。",
-      "imageUrl": "/generated_assets/guitar_diatonic_chords/placeholder.png",
-      "durationInFrames": 220,
-      "audioUrl": "/generated_assets/guitar_diatonic_chords/4.mp3",
-      "highlight": []
+      "text": "店側は客がどこで換金したか知らない建前",
+      "imageUrl": "/generated_assets/pachislo_3ten/placeholder.png",
+      "durationInFrames": 301,
+      "audioUrl": "/generated_assets/pachislo_3ten/4.mp3",
+      "highlight": [],
+      "step": false
     },
     {
       "type": "content",
-      "text": "4番目はエフ。初心者の壁と呼ばれますが、曲に明るさと緊張感を加える重要なコードです。",
-      "imageUrl": "/generated_assets/guitar_diatonic_chords/placeholder.png",
-      "durationInFrames": 203,
-      "audioUrl": "/generated_assets/guitar_diatonic_chords/5.mp3",
-      "highlight": []
+      "text": "この独立した三店の関係により 適法性が保たれる",
+      "imageUrl": "/generated_assets/pachislo_3ten/placeholder.png",
+      "durationInFrames": 267,
+      "audioUrl": "/generated_assets/pachislo_3ten/5.mp3",
+      "highlight": [],
+      "step": false
     },
     {
       "type": "content",
-      "text": "5番目はジー。ドミナントと呼ばれ、次のコードに進む力強い推進力を持っています。C に戻りたくなる響きです。",
-      "imageUrl": "/generated_assets/guitar_diatonic_chords/placeholder.png",
-      "durationInFrames": 258,
-      "audioUrl": "/generated_assets/guitar_diatonic_chords/6.mp3",
-      "highlight": []
-    },
-    {
-      "type": "content",
-      "text": "6番目はエーマイナー。相対的短調のコードで、切なさや哀愁を表現するのに最適です。",
-      "imageUrl": "/generated_assets/guitar_diatonic_chords/placeholder.png",
-      "durationInFrames": 198,
-      "audioUrl": "/generated_assets/guitar_diatonic_chords/7.mp3",
-      "highlight": []
+      "text": "正しく仕組みを理解して 健全に遊びましょう",
+      "imageUrl": "/generated_assets/pachislo_3ten/placeholder.png",
+      "durationInFrames": 194,
+      "audioUrl": "/generated_assets/pachislo_3ten/6.mp3",
+      "highlight": [],
+      "step": false
     },
     {
       "type": "outro",
-      "text": "まとめです。ダイアトニックコードは、C、D m、E m、F、G、A m の6つを覚えれば、ほとんどの曲に対応できます。ぜひ練習してみてください。",
+      "text": "パチンコの謎をもっと知ろう 詳細は動画をチェック",
       "imageUrl": "https://placehold.co/1920x1080/007ACC/FFFFFF/png?text=outro",
-      "durationInFrames": 416,
-      "audioUrl": "/generated_assets/guitar_diatonic_chords/8.mp3",
+      "durationInFrames": 151,
+      "audioUrl": "/generated_assets/pachislo_3ten/7.mp3",
       "highlight": []
     }
   ],
   "captions": [
     {
-      "text": "ギター弾いてるけど、コード進行がよく分からない。そんなあなたに、今日はダイアトニックコードを解説します。",
-      "startMs": 2834,
-      "endMs": 9868
+      "text": "賭博は禁止なのに なぜパチンコは換金できるのか",
+      "startMs": 5100,
+      "endMs": 13567
     },
     {
-      "text": "ダイアトニックコードとは、1つのキーの中で使える7つの基本コードのこと。これを覚えれば、コード進行が一気に理解できます。",
-      "startMs": 9868,
-      "endMs": 18302
+      "text": "1 ホールで出玉を特殊景品に交換する",
+      "startMs": 13567,
+      "endMs": 22201
     },
     {
-      "text": "キーがCメジャーの場合を見てみましょう。最初のコードはC。ドミソの和音で、曲の始まりや終わりによく使われます。",
-      "startMs": 18302,
-      "endMs": 26036
+      "text": "2 景品交換所で特殊景品を現金化する",
+      "startMs": 22201,
+      "endMs": 32168
     },
     {
-      "text": "次はディーマイナー。2番目のコードで、少し切ない響きが特徴です。サビへの橋渡しでよく使われます。",
-      "startMs": 26036,
-      "endMs": 33470
+      "text": "3 景品問屋が交換所から景品を買い取る",
+      "startMs": 32168,
+      "endMs": 41168
     },
     {
-      "text": "3番目はイーマイナー。暗めの響きで、バラードやポップスでよく登場します。押さえ方も簡単ですね。",
-      "startMs": 33470,
-      "endMs": 40804
+      "text": "店側は客がどこで換金したか知らない建前",
+      "startMs": 41168,
+      "endMs": 51202
     },
     {
-      "text": "4番目はエフ。初心者の壁と呼ばれますが、曲に明るさと緊張感を加える重要なコードです。",
-      "startMs": 40804,
-      "endMs": 47571
+      "text": "この独立した三店の関係により 適法性が保たれる",
+      "startMs": 51202,
+      "endMs": 60102
     },
     {
-      "text": "5番目はジー。ドミナントと呼ばれ、次のコードに進む力強い推進力を持っています。C に戻りたくなる響きです。",
-      "startMs": 47571,
-      "endMs": 56171
+      "text": "正しく仕組みを理解して 健全に遊びましょう",
+      "startMs": 60102,
+      "endMs": 66569
     },
     {
-      "text": "6番目はエーマイナー。相対的短調のコードで、切なさや哀愁を表現するのに最適です。",
-      "startMs": 56171,
-      "endMs": 62771
-    },
-    {
-      "text": "まとめです。ダイアトニックコードは、C、D m、E m、F、G、A m の6つを覚えれば、ほとんどの曲に対応できます。ぜひ練習してみてください。",
-      "startMs": 62771,
-      "endMs": 76638
+      "text": "パチンコの謎をもっと知ろう 詳細は動画をチェック",
+      "startMs": 66569,
+      "endMs": 71603
     }
   ],
-  "durationInFrames": 2300,
-  "backgroundImageUrl": "/generated_assets/guitar_diatonic_chords/background.png",
-  "characterImageUrl": "/generated_assets/guitar_diatonic_chords/character.png",
-  "slideHtml": "<section class=\"guitar-slide\">\n    <div class=\"slide-header\">\n        <h1>🎸 ダイアトニックコード</h1>\n        <p class=\"subtitle\">Key of C Major</p>\n    </div>\n\n    <div class=\"chord-grid\">\n        <!-- Row 1: I, ii, iii -->\n        <div class=\"chord-card\" id=\"item-1\">\n            <div class=\"degree-badge degree-1\">I</div>\n            <div class=\"chord-diagram\">\n                <div class=\"chord-name\">C</div>\n                <div class=\"fretboard\">\n                    <div class=\"strings\">\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                    </div>\n                    <div class=\"frets\">\n                        <div class=\"fret\"></div>\n                        <div class=\"fret\"></div>\n                        <div class=\"fret\"></div>\n                    </div>\n                    <div class=\"finger\" style=\"left: 16%; top: 25%;\">1</div>\n                    <div class=\"finger\" style=\"left: 33%; top: 50%;\">2</div>\n                    <div class=\"finger\" style=\"left: 50%; top: 75%;\">3</div>\n                </div>\n            </div>\n            <div class=\"chord-type\">メジャー</div>\n        </div>\n\n        <div class=\"chord-card\" id=\"item-2\">\n            <div class=\"degree-badge degree-2\">ii</div>\n            <div class=\"chord-diagram\">\n                <div class=\"chord-name\">Dm</div>\n                <div class=\"fretboard\">\n                    <div class=\"strings\">\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                    </div>\n                    <div class=\"frets\">\n                        <div class=\"fret\"></div>\n                        <div class=\"fret\"></div>\n                        <div class=\"fret\"></div>\n                    </div>\n                    <div class=\"finger\" style=\"left: 16%; top: 25%;\">1</div>\n                    <div class=\"finger\" style=\"left: 33%; top: 50%;\">2</div>\n                    <div class=\"finger\" style=\"left: 0%; top: 75%;\">3</div>\n                </div>\n            </div>\n            <div class=\"chord-type\">マイナー</div>\n        </div>\n\n        <div class=\"chord-card\" id=\"item-3\">\n            <div class=\"degree-badge degree-3\">iii</div>\n            <div class=\"chord-diagram\">\n                <div class=\"chord-name\">Em</div>\n                <div class=\"fretboard\">\n                    <div class=\"strings\">\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                    </div>\n                    <div class=\"frets\">\n                        <div class=\"fret\"></div>\n                        <div class=\"fret\"></div>\n                        <div class=\"fret\"></div>\n                    </div>\n                    <div class=\"finger\" style=\"left: 33%; top: 50%;\">1</div>\n                    <div class=\"finger\" style=\"left: 50%; top: 50%;\">2</div>\n                </div>\n            </div>\n            <div class=\"chord-type\">マイナー</div>\n        </div>\n\n        <!-- Row 2: IV, V, vi -->\n        <div class=\"chord-card\" id=\"item-4\">\n            <div class=\"degree-badge degree-4\">IV</div>\n            <div class=\"chord-diagram\">\n                <div class=\"chord-name\">F</div>\n                <div class=\"fretboard\">\n                    <div class=\"strings\">\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                    </div>\n                    <div class=\"frets\">\n                        <div class=\"fret\"></div>\n                        <div class=\"fret\"></div>\n                        <div class=\"fret\"></div>\n                    </div>\n                    <div class=\"barre\" style=\"top: 25%;\"></div>\n                    <div class=\"finger\" style=\"left: 50%; top: 50%;\">2</div>\n                    <div class=\"finger\" style=\"left: 33%; top: 75%;\">3</div>\n                    <div class=\"finger\" style=\"left: 16%; top: 75%;\">4</div>\n                </div>\n            </div>\n            <div class=\"chord-type\">メジャー</div>\n        </div>\n\n        <div class=\"chord-card\" id=\"item-5\">\n            <div class=\"degree-badge degree-5\">V</div>\n            <div class=\"chord-diagram\">\n                <div class=\"chord-name\">G</div>\n                <div class=\"fretboard\">\n                    <div class=\"strings\">\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                    </div>\n                    <div class=\"frets\">\n                        <div class=\"fret\"></div>\n                        <div class=\"fret\"></div>\n                        <div class=\"fret\"></div>\n                    </div>\n                    <div class=\"finger\" style=\"left: 83%; top: 50%;\">1</div>\n                    <div class=\"finger\" style=\"left: 0%; top: 75%;\">2</div>\n                    <div class=\"finger\" style=\"left: 100%; top: 75%;\">3</div>\n                </div>\n            </div>\n            <div class=\"chord-type\">メジャー</div>\n        </div>\n\n        <div class=\"chord-card\" id=\"item-6\">\n            <div class=\"degree-badge degree-6\">vi</div>\n            <div class=\"chord-diagram\">\n                <div class=\"chord-name\">Am</div>\n                <div class=\"fretboard\">\n                    <div class=\"strings\">\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                        <div class=\"string\"></div>\n                    </div>\n                    <div class=\"frets\">\n                        <div class=\"fret\"></div>\n                        <div class=\"fret\"></div>\n                        <div class=\"fret\"></div>\n                    </div>\n                    <div class=\"finger\" style=\"left: 16%; top: 25%;\">1</div>\n                    <div class=\"finger\" style=\"left: 33%; top: 50%;\">2</div>\n                    <div class=\"finger\" style=\"left: 50%; top: 50%;\">3</div>\n                </div>\n            </div>\n            <div class=\"chord-type\">マイナー</div>\n        </div>\n    </div>\n\n    <div class=\"tip-box\" id=\"item-7\">\n        <span class=\"tip-icon\">💡</span>\n        <span class=\"tip-text\">この6つのコードでほとんどの曲が弾けます！</span>\n    </div>\n</section>",
-  "customCss": "/* ギターコード専用スライドデザイン */\n@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');\n\n.guitar-slide {\n    display: flex;\n    flex-direction: column;\n    height: 100%;\n    padding: 50px 60px 150px 60px !important;\n    box-sizing: border-box !important;\n    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);\n    font-family: 'Noto Sans JP', sans-serif;\n    color: white;\n}\n\n/* ヘッダー */\n.slide-header {\n    text-align: center;\n    margin-bottom: 30px;\n}\n\n.slide-header h1 {\n    font-size: 48px;\n    font-weight: 900;\n    margin: 0;\n    background: linear-gradient(90deg, #f39c12, #e74c3c, #9b59b6);\n    -webkit-background-clip: text;\n    -webkit-text-fill-color: transparent;\n    background-clip: text;\n    text-shadow: 0 4px 20px rgba(243, 156, 18, 0.3);\n}\n\n.slide-header .subtitle {\n    font-size: 24px;\n    color: #a0a0a0;\n    margin-top: 8px;\n    font-weight: 400;\n}\n\n/* コードグリッド */\n.chord-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 20px;\n    flex: 1;\n    max-height: 800px;\n}\n\n/* コードカード */\n.chord-card {\n    background: rgba(255, 255, 255, 0.08);\n    border-radius: 16px;\n    padding: 20px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    position: relative;\n    border: 2px solid rgba(255, 255, 255, 0.1);\n    transition: all 0.3s ease;\n    backdrop-filter: blur(10px);\n}\n\n/* 度数バッジ */\n.degree-badge {\n    position: absolute;\n    top: -12px;\n    left: 50%;\n    transform: translateX(-50%);\n    padding: 6px 16px;\n    border-radius: 20px;\n    font-size: 18px;\n    font-weight: 700;\n    color: white;\n}\n\n.degree-1 {\n    background: linear-gradient(135deg, #e74c3c, #c0392b);\n}\n\n.degree-2 {\n    background: linear-gradient(135deg, #e67e22, #d35400);\n}\n\n.degree-3 {\n    background: linear-gradient(135deg, #f1c40f, #f39c12);\n    color: #333;\n}\n\n.degree-4 {\n    background: linear-gradient(135deg, #2ecc71, #27ae60);\n}\n\n.degree-5 {\n    background: linear-gradient(135deg, #3498db, #2980b9);\n}\n\n.degree-6 {\n    background: linear-gradient(135deg, #9b59b6, #8e44ad);\n}\n\n/* コード図 */\n.chord-diagram {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-top: 15px;\n}\n\n.chord-name {\n    font-size: 42px;\n    font-weight: 900;\n    color: #fff;\n    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);\n    margin-bottom: 10px;\n}\n\n/* フレットボード */\n.fretboard {\n    width: 100px;\n    height: 80px;\n    position: relative;\n    background: linear-gradient(180deg, #8B4513 0%, #654321 100%);\n    border-radius: 4px;\n    padding: 8px;\n}\n\n.strings {\n    display: flex;\n    justify-content: space-between;\n    height: 100%;\n    position: absolute;\n    width: calc(100% - 16px);\n    top: 0;\n    left: 8px;\n}\n\n.string {\n    width: 2px;\n    height: 100%;\n    background: linear-gradient(180deg, #f0f0f0, #c0c0c0);\n    border-radius: 1px;\n}\n\n.frets {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    height: 100%;\n    position: absolute;\n    width: 100%;\n    top: 0;\n    left: 0;\n}\n\n.fret {\n    width: 100%;\n    height: 2px;\n    background: #a0a0a0;\n}\n\n/* 指の位置 */\n.finger {\n    position: absolute;\n    width: 20px;\n    height: 20px;\n    background: linear-gradient(135deg, #3498db, #2980b9);\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 12px;\n    font-weight: 700;\n    color: white;\n    transform: translate(-50%, -50%);\n    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);\n}\n\n/* バレーコード表示 */\n.barre {\n    position: absolute;\n    left: 5%;\n    width: 90%;\n    height: 18px;\n    background: linear-gradient(135deg, #3498db, #2980b9);\n    border-radius: 9px;\n    transform: translateY(-50%);\n    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);\n}\n\n/* コードタイプ */\n.chord-type {\n    font-size: 14px;\n    color: #a0a0a0;\n    margin-top: 10px;\n    padding: 4px 12px;\n    background: rgba(255, 255, 255, 0.1);\n    border-radius: 12px;\n}\n\n/* ティップボックス */\n.tip-box {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    gap: 12px;\n    margin-top: 20px;\n    padding: 16px 24px;\n    background: linear-gradient(135deg, rgba(46, 204, 113, 0.2), rgba(39, 174, 96, 0.2));\n    border: 2px solid rgba(46, 204, 113, 0.4);\n    border-radius: 12px;\n}\n\n.tip-icon {\n    font-size: 28px;\n}\n\n.tip-text {\n    font-size: 22px;\n    font-weight: 700;\n    color: #2ecc71;\n}\n\n/* アニメーション用：初期状態で非表示 */\n#item-1,\n#item-2,\n#item-3,\n#item-4,\n#item-5,\n#item-6,\n#item-7 {\n    opacity: 0;\n}\n\n/* ホバーエフェクト（プレビュー用） */\n.chord-card:hover {\n    transform: scale(1.02);\n    border-color: rgba(255, 255, 255, 0.3);\n    background: rgba(255, 255, 255, 0.12);\n}",
+  "durationInFrames": 2149,
+  "titleSplit": [
+    "パチンコが合法な理由",
+    "三店方式の仕組み"
+  ],
+  "backgroundImageUrl": "/generated_assets/pachislo_3ten/background.png",
+  "characterImageUrl": "/generated_assets/pachislo_3ten/character.png",
+  "slideHtml": "<section class=\"std-grid-slide\">\n    <div class=\"slide-header\">\n        <h1>三店方式の仕組み</h1>\n    </div>\n    <div class=\"slide-number\">System</div>\n\n    <div class=\"grid-container\">\n        <!-- Card 1 -->\n        <div class=\"grid-card animate-item\" id=\"item-1\">\n            <div class=\"card-badge\">1</div>\n            <div class=\"card-icon\"><span class=\"material-symbols-outlined\">casino</span></div>\n            <h3>遊技場（ホール）</h3>\n            <p>客が出玉と<br>「特殊景品」を交換</p>\n        </div>\n\n        <!-- Card 2 -->\n        <div class=\"grid-card animate-item\" id=\"item-2\">\n            <div class=\"card-badge\">2</div>\n            <div class=\"card-icon\"><span class=\"material-symbols-outlined\">currency_exchange</span></div>\n            <h3>景品交換所</h3>\n            <p>特殊景品を<br>「現金」で買い取る</p>\n        </div>\n\n        <!-- Card 3 -->\n        <div class=\"grid-card animate-item\" id=\"item-3\">\n            <div class=\"card-badge\">3</div>\n            <div class=\"card-icon\"><span class=\"material-symbols-outlined\">local_shipping</span></div>\n            <h3>景品問屋</h3>\n            <p>景品を買い取り<br>ホールへ卸す</p>\n        </div>\n    </div>\n</section>",
+  "customCss": "/* Custom Theme: Pachinko Gold & Navy (Grid Layout) */\n@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap');\n\n:root {\n    --primary-color: #ffd700;\n    /* Gold */\n    --accent-color: #ffffff;\n    --bg-gradient: linear-gradient(135deg, #001f3f 0%, #003366 100%);\n    /* Navy */\n    --text-main: #ffffff;\n    --text-sub: #b0bec5;\n    --card-bg: rgba(255, 255, 255, 0.1);\n    --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);\n}\n\nbody {\n    margin: 0;\n    padding: 0;\n}\n\nsection {\n    display: flex;\n    flex-direction: column;\n    height: 100%;\n    padding: 60px 40px 180px 40px !important;\n    /* side margins reduced for grid */\n    box-sizing: border-box !important;\n    background: var(--bg-gradient);\n    font-family: 'Noto Sans JP', sans-serif;\n    color: var(--text-main);\n    position: relative;\n    overflow: hidden;\n}\n\n.slide-header {\n    margin-bottom: 40px;\n    padding-bottom: 20px;\n    border-bottom: 4px solid var(--primary-color);\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n    margin: 0 40px 40px 40px;\n}\n\n.slide-header h1 {\n    font-size: 72px;\n    margin: 0;\n    color: var(--primary-color);\n    font-weight: 900;\n    line-height: 1.1;\n    text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);\n}\n\n.slide-number {\n    font-size: 80px;\n    font-weight: 900;\n    color: rgba(255, 215, 0, 0.1);\n    position: absolute;\n    top: 20px;\n    right: 40px;\n    line-height: 1;\n}\n\n.animate-item {\n    opacity: 0;\n    transform: scale(0.9) translateY(20px);\n    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);\n}\n\n.grid-container {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 20px;\n    flex: 1;\n    align-items: stretch;\n    padding: 0 20px;\n    justify-content: center;\n}\n\n.grid-card {\n    background: var(--card-bg);\n    padding: 40px 20px;\n    border-radius: 20px;\n    box-shadow: var(--shadow);\n    backdrop-filter: blur(10px);\n    border: 1px solid rgba(255, 215, 0, 0.2);\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    position: relative;\n}\n\n.card-badge {\n    position: absolute;\n    top: -20px;\n    left: 20px;\n    background: var(--primary-color);\n    color: #001f3f;\n    width: 60px;\n    height: 60px;\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 32px;\n    font-weight: 900;\n    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);\n}\n\n.card-icon {\n    margin: 30px 0 20px 0;\n}\n\n.card-icon span {\n    font-size: 100px !important;\n    color: var(--primary-color);\n    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.3));\n}\n\n.grid-card h3 {\n    margin: 10px 0;\n    font-size: 38px;\n    color: var(--primary-color);\n    font-weight: 800;\n    line-height: 1.2;\n}\n\n.grid-card p {\n    margin: 10px 0 0 0;\n    font-size: 24px;\n    color: var(--text-sub);\n    line-height: 1.4;\n}\n\n/* Specific highlight for second card to emphasize 'change' */\n#item-2 {\n    background: rgba(255, 215, 0, 0.15);\n    border: 2px solid var(--primary-color);\n}\n\n/* Material Symbols Class */\n.material-symbols-outlined {\n    font-family: 'Material Symbols Outlined';\n    font-weight: normal;\n    font-style: normal;\n    line-height: 1;\n    letter-spacing: normal;\n    text-transform: none;\n    display: inline-block;\n    white-space: nowrap;\n    word-wrap: normal;\n    direction: ltr;\n    -webkit-font-feature-settings: 'liga';\n    -webkit-font-smoothing: antialiased;\n}",
   "slideSteps": [
-    296,
-    549,
-    781,
-    1004,
-    1224,
-    1427,
-    1685
+    407,
+    666,
+    965
   ]
 }

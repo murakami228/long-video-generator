@@ -38,12 +38,56 @@
 #### [MODIFY] [scripts/sync_audio.ts](file:///Users/murakamikei/Desktop/AIG検証/ショート動画自動生成/long-video-generator/scripts/sync_audio.ts)
 - 処理開始時に `validate_input.ts` の機能を呼び出すか、統合することを検討（今回は `validate_input.ts` の修正のみで対応し、手動実行またはパイプライン組み込みを想定）。
 
+## Mass Production Plan (10 Projects)
+
+User has requested 10 videos with different patterns.
+
+### Topics & Templates Mapping
+1.  **11_excel_shortcuts**
+    *   **Topic**: Job Efficiency (Excel)
+    *   **Template**: `grid_blue` (Standard Grid)
+    *   **Structure**: 3 Key Shortcuts
+2.  **12_ai_tools_2026**
+    *   **Topic**: Latest Tech
+    *   **Template**: `grid_cyber` (Dark, Neon, Grid)
+    *   **Structure**: 3 Top AI Tools
+3.  **13_remote_work_pros_cons**
+    *   **Topic**: Work Style
+    *   **Template**: `split_minimal` (White/Clean, Left: Pros, Right: Cons)
+    *   **Structure**: Comparison
+4.  **14_side_hustle_steps**
+    *   **Topic**: Career
+    *   **Template**: `step_flow` (Vertical timeline/arrows)
+    *   **Structure**: Step 1 -> Step 2 -> Step 3
+5.  **15_python_list_comprehension**
+    *   **Topic**: Programming
+    *   **Template**: `code_dark` (Monospace, dark bg, syntax highlight look)
+    *   **Structure**: Before (Loop) vs After (List Comp)
+6.  **16_pareto_principle**
+    *   **Topic**: Mental Model
+    *   **Template**: `big_impact` (Huge text, bold colors)
+    *   **Structure**: 80 vs 20 Visual
+7.  **17_essentialism_book**
+    *   **Topic**: Book Review
+    *   **Template**: `book_summary` (Serif font, paper texture feel)
+    *   **Structure**: 3 Core Lessons
+8.  **18_morning_routine**
+    *   **Topic**: Lifestyle
+    *   **Template**: `list_pop` (Orange/Yellow, bouncy feel)
+    *   **Structure**: 5 Habits list
+9.  **19_security_mistakes**
+    *   **Topic**: Security Awareness
+    *   **Template**: `warning_alert` (Red/Black diagonal stripes)
+    *   **Structure**: 3 Bad Habits
+10. **20_ios_vs_android**
+    *   **Topic**: Tech Debate
+    *   **Template**: `split_dark` (Dark mode comparison)
+    *   **Structure**: Left: iOS, Right: Android
+
 ## Verification Plan
 
-### Automated Tests
-- なし
-
 ### Manual Verification
-1. **コード修正後**: `sync_audio.ts` を実行。
-2. **動作確認**: わざと長いテキストを含む `input.json` を用意し、コンソールに警告が出ることを確認する。
-3. **動画確認**: `MarpExperiment` のハイライト機能が動作することを確認（プレビューまたはレンダリング）。
+1. Run `./scripts/auto_all.sh 11 12 13 14 15 16 17 18 19 20`
+2. Check `out/` folder for 10 generated MP4 files.
+3. Verify visual variety (designs should look distinct).
+

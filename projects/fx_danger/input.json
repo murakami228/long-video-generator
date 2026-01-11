@@ -1,0 +1,93 @@
+{
+    "project_name": "FXの危険性",
+    "theme": "金融知識",
+    "platform": "YouTube Shorts",
+    "customScript": {
+        "title": "FXで破産する人の共通点",
+        "title_speech": "エフエックスで破産する人の共通点について解説します。",
+        "title_split": [
+            "FXで破産する",
+            "人の共通点"
+        ],
+        "sections": [
+            {
+                "id": "intro",
+                "text": "FXは簡単には稼げない 初心者が陥る4つの罠を解説",
+                "speechText": "エフエックスは簡単には稼げません。初心者が陥りやすい 4つの罠を解説します。",
+                "speaker": "zundamon",
+                "type": "intro"
+            },
+            {
+                "id": "step1",
+                "text": "1 ハイレバレッジの掛け過ぎ 資金が一瞬で溶ける恐怖",
+                "speechText": "1つ目はハイレバレッジの掛けすぎです。わずかな逆行で 一瞬にして全ての資金が溶けてしまいます。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "highlight": [
+                    "ハイレバレッジ",
+                    "一瞬"
+                ]
+            },
+            {
+                "id": "step2",
+                "text": "2 損切りできない罠 ズルズル負けを広げる行為",
+                "speechText": "2つ目は損切りができないことです。ズルズルと負けを広げ 最終的には強制ロスカットを食らいます。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "highlight": [
+                    "損切り",
+                    "強制ロスカット"
+                ]
+            },
+            {
+                "id": "step3",
+                "text": "3 急変時のスリッページ 注文が大きくズレるリスク",
+                "speechText": "3つ目は急な価格変動によるスリッページです。注文が大きくズレて 予想を上回る大損をすることがあります。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "highlight": [
+                    "スリッページ",
+                    "大損"
+                ]
+            },
+            {
+                "id": "step4",
+                "text": "4 感情的なポジポジ病 取引の繰り返しはギャンブル",
+                "speechText": "4つ目は感情的なポジポジ病です。根拠のない取引を繰り返すのは 投資ではなく単なるギャンブルです。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": true,
+                "highlight": [
+                    "ポジポジ病",
+                    "ギャンブル"
+                ]
+            },
+            {
+                "id": "step5",
+                "text": "生き残るために最も重要 徹底した資金管理を死守せよ",
+                "speechText": "生き残るために最も重要なのは 徹底した資金管理です。自分のルールを死守してください。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": false
+            },
+            {
+                "id": "step6",
+                "text": "まずはデモトレードで 冷静な判断力を磨こう",
+                "speechText": "まずはデモトレードで練習し 冷静な判断力を磨くことから始めましょう。",
+                "speaker": "zundamon",
+                "type": "content",
+                "step": false
+            },
+            {
+                "id": "outro",
+                "text": "リスクを正しく学ぼう 詳細は動画をチェック",
+                "speechText": "リスクを正しく学んで 安定した収益を目指していきましょう。チャンネル登録もお願いします。",
+                "speaker": "zundamon",
+                "type": "outro"
+            }
+        ]
+    }
+}

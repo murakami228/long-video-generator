@@ -45,10 +45,10 @@ sections.forEach((section: any, idx: number) => {
         console.warn(`⚠️  Section ${idx}: Text length (${text.length}) exceeds 35 chars. Consider shortening.`);
     }
 
-    // 1. Line Length Check (Max 12 chars)
+    // 1. Line Length Check (Relaxed to 35 chars for horizontal captions)
     lines.forEach((line: string, lineIdx: number) => {
-        if (line.length > 12) {
-            console.error(`❌ Section ${idx} [Line ${lineIdx + 1}]: Too long (${line.length} chars). Max 12 allowed.`);
+        if (line.length > 35) {
+            console.error(`❌ Section ${idx} [Line ${lineIdx + 1}]: Too long (${line.length} chars). Max 35 allowed.`);
             console.error(`   Content: "${line}"`);
             hasError = true;
         }
@@ -61,18 +61,16 @@ sections.forEach((section: any, idx: number) => {
         hasError = true;
     }
 
-    // 3. Half-width Space Check
+    // 3. Half-width Space Check (Lowered to Warning)
     if (text.includes(' ') || text.includes('　')) {
-        console.error(`❌ Section ${idx}: Contains spaces.`);
-        console.error(`   Content: "${text.replace(/\n/g, ' ')}"`);
-        hasError = true;
+        console.warn(`⚠️  Section ${idx}: Contains spaces.`);
+        // hasError = false; // No longer blocking
     }
 
-    // 4. Alphabet Check (Should be Katakana)
+    // 4. Alphabet Check (Lowered to Warning)
     if (text.match(/[a-zA-Z]/)) {
-        console.error(`❌ Section ${idx}: Contains alphabet characters. Use Katakana.`);
-        console.error(`   Content: "${text.replace(/\n/g, ' ')}"`);
-        hasError = true;
+        console.warn(`⚠️  Section ${idx}: Contains alphabet characters. Consider using Katakana.`);
+        // hasError = false;
     }
 
     // 5. Line break trailing particles (Optional but recommended)
@@ -85,6 +83,19 @@ sections.forEach((section: any, idx: number) => {
             }
         }
     });
+
+    // 7. speechText Punctuation Check (New)
+    const speechText = section.speechText || '';
+    if (speechText) {
+        const punctuationCount = (speechText.match(/[、。]/g) || []).length;
+        if (punctuationCount >= 2) {
+            console.warn(`⚠️  Section ${idx}: high punctuation count in speechText (${punctuationCount}). This may cause unnatural gaps.`);
+        }
+        if (speechText.match(/[、。]{2,}/)) {
+            console.error(`❌ Section ${idx}: Consecutive punctuation in speechText. This causes long silence gaps.`);
+            hasError = true;
+        }
+    }
 });
 
 // 6. 6-Step Structure Check

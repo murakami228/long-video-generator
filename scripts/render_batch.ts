@@ -51,7 +51,7 @@ async function processProject(projectSlug: string) {
 
         // 2. Render Video
         console.log(`  Rendering video to ${outputFile}...`);
-        execSync(`npx remotion render LongVideo "${outputFile}"`, { stdio: 'inherit' });
+        execSync(`npx remotion render MarpExperiment "${outputFile}"`, { stdio: 'inherit' });
 
         // 3. Move to completed_projects
         console.log(`  Moving project to completed_projects/...`);

@@ -11,7 +11,6 @@ const data = generatedData as VideoData;
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-      {/* LongVideo は廃止。MarpExperiment のみ使用 */}
       <Composition
         id="MarpExperiment"
         component={MarpExperiment}
