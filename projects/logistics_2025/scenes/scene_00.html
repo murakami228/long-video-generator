@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            width: 1920px;
+            height: 1080px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1e3a5f 0%, #0f2744 100%);
+        }
+        
+        .caption-overlay {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 80px;
+            z-index: 1000;
+        }
+        
+        .caption-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 16px 32px;
+            border-radius: 12px;
+        }
+        
+        .caption-text {
+            font-size: 42px;
+            font-weight: bold;
+            color: white;
+            -webkit-text-stroke: 4px black;
+            paint-order: stroke fill;
+            -webkit-text-fill-color: white;
+            stroke-linejoin: round;
+            text-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+            font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+            line-height: 1.2;
+            white-space: pre-wrap;
+        }
+        
+        .scene-info {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.9);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 9999;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        
+        .scene-info a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 15px;
+            background: #4299e1;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+            font-size: 80px;
+            font-weight: 900;
+            font-family: "Noto Sans JP", sans-serif;
+            text-align: center;
+            padding: 100px;
+        }
+        
+        .audio-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .play-button {
+            background: #48bb78;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .play-button:hover {
+            background: #38a169;
+        }
+        
+        .audio-path {
+            font-size: 12px;
+            color: #a0aec0;
+        }
+    </style>
+    <script>
+        let audio = null;
+        let isPlaying = false;
+        
+        function toggleAudio() {
+            const button = document.getElementById('playButton');
+            
+            if (!audio) {
+                const audioPath = '/generated_assets/logistics_2025/title.mp3'.replace(/\/generated_assets\/[^/]+\//, '../assets/audio/');
+                audio = new Audio(audioPath);
+                audio.addEventListener('ended', () => {
+                    isPlaying = false;
+                    button.textContent = '▶ 音声再生';
+                });
+            }
+            
+            if (isPlaying) {
+                audio.pause();
+                button.textContent = '▶ 音声再生';
+            } else {
+                audio.play();
+                button.textContent = '⏸ 停止';
+            }
+            
+            isPlaying = !isPlaying;
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' && 0 > 0) {
+                window.location.href = 'scene_-1.html';
+            } else if (e.key === 'ArrowRight' && 0 < 35) {
+                window.location.href = 'scene_01.html';
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="scene-info">
+        <div>
+            <div>Scene 00 / 35 | Title Scene | 5.5s</div>
+            <div class="audio-path">/generated_assets/logistics_2025/title.mp3</div>
+        </div>
+        <div class="audio-controls">
+            <button id="playButton" class="play-button" onclick="toggleAudio()">▶ 音声再生</button>
+            <a href="../index.html">📋 Index</a>
+            
+            <a href="scene_01.html">次 →</a>
+        </div>
+    </div>
+    
+    <div class="title-container">
+        物流2法改正 対応できていますか？
+    </div>
+    
+    <div class="caption-overlay">
+        <div class="caption-box">
+            <div class="caption-text">物流2法改正 対応できていますか？</div>
+        </div>
+    </div>
+</body>
+</html>

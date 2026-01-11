@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            width: 1920px;
+            height: 1080px;
+            overflow: hidden;
+        }
+        
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 1920px;
+            height: 1080px;
+            overflow: hidden;
+        }
+
+        section {
+            width: 1920px;
+            height: 1080px;
+            background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+            color: #102a43;
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 60px;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #243b53;
+            color: white;
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 64px;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #2680eb;
+        }
+
+        .sub-title {
+            font-size: 32px;
+            color: #486581;
+            margin-bottom: 40px;
+        }
+
+        .avatar-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .name-tag {
+            font-size: 24px;
+            font-weight: bold;
+            color: #243b53;
+        }
+    
+        
+        /* StepIndex visibility */
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        /* Caption overlay */
+        .caption-overlay {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 80px;
+            z-index: 1000;
+        }
+        
+        .caption-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 16px 32px;
+            border-radius: 12px;
+        }
+        
+        .caption-text {
+            font-size: 42px;
+            font-weight: bold;
+            color: white;
+            -webkit-text-stroke: 4px black;
+            paint-order: stroke fill;
+            -webkit-text-fill-color: white;
+            stroke-linejoin: round;
+            text-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+            font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+            line-height: 1.2;
+            white-space: pre-wrap;
+        }
+        
+        /* Scene info overlay */
+        .scene-info {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.9);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 9999;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        
+        .scene-info a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 15px;
+            background: #4299e1;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        
+        .audio-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .play-button {
+            background: #48bb78;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .play-button:hover {
+            background: #38a169;
+        }
+        
+        .audio-path {
+            font-size: 12px;
+            color: #a0aec0;
+        }
+    </style>
+    <script>
+        let audio = null;
+        let isPlaying = false;
+        
+        function toggleAudio() {
+            const button = document.getElementById('playButton');
+            
+            if (!audio) {
+                const audioPath = '/generated_assets/logistics_2025/7.mp3'.replace(/\/generated_assets\/[^/]+\//, '../assets/audio/');
+                audio = new Audio(audioPath);
+                audio.addEventListener('ended', () => {
+                    isPlaying = false;
+                    button.textContent = '▶ 音声再生';
+                });
+            }
+            
+            if (isPlaying) {
+                audio.pause();
+                button.textContent = '▶ 音声再生';
+            } else {
+                audio.play();
+                button.textContent = '⏸ 停止';
+            }
+            
+            isPlaying = !isPlaying;
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' && 8 > 0) {
+                window.location.href = 'scene_07.html';
+            } else if (e.key === 'ArrowRight' && 8 < 35) {
+                window.location.href = 'scene_09.html';
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="scene-info">
+        <div>
+            <div>Scene 08 / 35 | stepIndex: 0 | 5.3s</div>
+            <div class="audio-path">/generated_assets/logistics_2025/7.mp3</div>
+        </div>
+        <div class="audio-controls">
+            <button id="playButton" class="play-button" onclick="toggleAudio()">▶ 音声再生</button>
+            <a href="../index.html">📋 Index</a>
+            <a href="../master/slide_1.html" target="_blank">🎨 Master</a>
+            <a href="scene_07.html">← 前</a>
+            <a href="scene_09.html">次 →</a>
+        </div>
+    </div>
+    
+    
+    <section>
+        <div class="container">
+            <div class="badge">2025年4月施行</div>
+            <h1>物流2法改正<br><span class="highlight">あなたの会社は対応できていますか？</span></h1>
+            <div class="sub-title">長年の課題にメスを入れる、業界の構造改革</div>
+            <div class="avatar-container">
+                <img src="/generated_assets/characters/ayumi_smile.png" alt="Ayumi" class="avatar">
+                <div class="name-tag">行政書士 あゆみ</div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="caption-overlay">
+        <div class="caption-box">
+            <div class="caption-text">今日は実務の視点から解説します</div>
+        </div>
+    </div>
+</body>
+</html>

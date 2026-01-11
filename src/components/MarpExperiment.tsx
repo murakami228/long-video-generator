@@ -52,12 +52,16 @@ export const MarpExperiment: React.FC = () => {
                 );
             })}
 
-            {/* Slide Component */}
-            <MarpReactSlide
-                htmlContent={htmlContent}
-                customCss={customCss}
-                steps={steps}
-            />
+            {/* Slide Component - Multi-slide Support */}
+            {data.scenes.map((scene, index) => (
+                <Sequence key={`slide-${index}`} from={sceneStartFrames[index]} durationInFrames={scene.durationInFrames}>
+                    <MarpReactSlide
+                        htmlContent={scene.slideHtml || data.slideHtml || ''}
+                        customCss={scene.customCss || data.customCss}
+                        stepIndex={scene.stepIndex || 0}
+                    />
+                </Sequence>
+            ))}
 
             {/* Captions Overlay */}
             {data.scenes.map((scene, index) => (

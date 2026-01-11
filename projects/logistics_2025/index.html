@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logistics_2025 - Preview Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background: #f7fafc;
+            padding: 40px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #2d3748;
+        }
+        
+        .stats {
+            color: #718096;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2d3748;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+        
+        .folder-structure {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .card {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4299e1;
+            transition: all 0.2s;
+        }
+        
+        .card:hover {
+            background: #edf2f7;
+            transform: translateX(5px);
+        }
+        
+        .card a {
+            color: #2d3748;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .card .meta {
+            font-size: 12px;
+            color: #718096;
+            margin-top: 5px;
+        }
+        
+        .master-card {
+            border-left-color: #48bb78;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📹 logistics_2025</h1>
+        <div class="stats">
+            36 シーン | 3.2 分 | 5766 フレーム
+        </div>
+        
+        <div class="section">
+            <h2>📁 フォルダ構成</h2>
+            <div class="folder-structure">
+projects/logistics_2025/<br>
+├── scenes/ ..................... シーンごとのプレビュー (36個)<br>
+│   ├── scene_00.html ........... タイトルシーン<br>
+│   ├── scene_01.html ~ 35.html<br>
+│   └── (音声再生・キーボードナビゲーション対応)<br>
+├── master/ ..................... スライド全体プレビュー<br>
+│   ├── slide_1.html ~ 6.html<br>
+│   └── (全ステップ表示状態)<br>
+├── data.json ................... Remotion用データ<br>
+└── output.mp4 .................. レンダリング済み動画
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🎬 シーンプレビュー</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <a href="scenes/scene_00.html">
+                        Scene 00
+                    </a>
+                    <div class="meta">
+                        物流2法改正 対応できていますか？<br>
+                        5.5s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_01.html">
+                        Scene 01
+                    </a>
+                    <div class="meta">
+                        こんにちは あゆみです<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_02.html">
+                        Scene 02
+                    </a>
+                    <div class="meta">
+                        運送会社の社長 担当者の皆様<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_03.html">
+                        Scene 03
+                    </a>
+                    <div class="meta">
+                        2025年問題を乗り越えて日々奮闘中<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_04.html">
+                        Scene 04
+                    </a>
+                    <div class="meta">
+                        しかし本当の戦いはこれからです<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_05.html">
+                        Scene 05
+                    </a>
+                    <div class="meta">
+                        業界の根幹を揺るがす法改正が施行<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_06.html">
+                        Scene 06
+                    </a>
+                    <div class="meta">
+                        荷主との関係 多重下請けにメス<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_07.html">
+                        Scene 07
+                    </a>
+                    <div class="meta">
+                        運送事業者に重い管理責任も<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_08.html">
+                        Scene 08
+                    </a>
+                    <div class="meta">
+                        今日は実務の視点から解説します<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_09.html">
+                        Scene 09
+                    </a>
+                    <div class="meta">
+                        なぜ今このタイミングで法改正なのか<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_10.html">
+                        Scene 10
+                    </a>
+                    <div class="meta">
+                        時間外労働の上限規制という現実<br>
+                        5.3s | stepIndex: 1
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_11.html">
+                        Scene 11
+                    </a>
+                    <div class="meta">
+                        従来の働き方では事業が立ち行かない<br>
+                        5.3s | stepIndex: 2
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_12.html">
+                        Scene 12
+                    </a>
+                    <div class="meta">
+                        日本の物流が崩壊する危機感から<br>
+                        5.3s | stepIndex: 2
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_13.html">
+                        Scene 13
+                    </a>
+                    <div class="meta">
+                        取引の不透明さや荷主の姿勢に<br>
+                        5.3s | stepIndex: 2
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_14.html">
+                        Scene 14
+                    </a>
+                    <div class="meta">
+                        法律でメスを入れる決断をした<br>
+                        5.3s | stepIndex: 3
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_15.html">
+                        Scene 15
+                    </a>
+                    <div class="meta">
+                        運送事業者に直接関わる事業法<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_16.html">
+                        Scene 16
+                    </a>
+                    <div class="meta">
+                        絶対に抑えるべき3つのポイント<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_17.html">
+                        Scene 17
+                    </a>
+                    <div class="meta">
+                        ポイント1 契約の書面化義務<br>
+                        5.3s | stepIndex: 1
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_18.html">
+                        Scene 18
+                    </a>
+                    <div class="meta">
+                        荷待ち時間や荷役時間を明確に記載<br>
+                        5.3s | stepIndex: 2
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_19.html">
+                        Scene 19
+                    </a>
+                    <div class="meta">
+                        正当な料金を請求できる武器に<br>
+                        5.3s | stepIndex: 3
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_20.html">
+                        Scene 20
+                    </a>
+                    <div class="meta">
+                        ポイント2 実運送体制管理簿<br>
+                        5.3s | stepIndex: 4
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_21.html">
+                        Scene 21
+                    </a>
+                    <div class="meta">
+                        下請け構造を可視化 管理責任厳格化<br>
+                        5.3s | stepIndex: 5
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_22.html">
+                        Scene 22
+                    </a>
+                    <div class="meta">
+                        ポイント3 軽貨物事業者への規制<br>
+                        5.3s | stepIndex: 6
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_23.html">
+                        Scene 23
+                    </a>
+                    <div class="meta">
+                        黒ナンバーにも義務 言い訳不可<br>
+                        5.3s | stepIndex: 7
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_24.html">
+                        Scene 24
+                    </a>
+                    <div class="meta">
+                        荷主側にも大きな変化を求めます<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_25.html">
+                        Scene 25
+                    </a>
+                    <div class="meta">
+                        流通業務効率化法 協力の努力義務<br>
+                        5.3s | stepIndex: 1
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_26.html">
+                        Scene 26
+                    </a>
+                    <div class="meta">
+                        荷待ち削減 物流統括管理者の選任<br>
+                        5.3s | stepIndex: 2
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_27.html">
+                        Scene 27
+                    </a>
+                    <div class="meta">
+                        荷主も物流の当事者として責任を問われる時代に<br>
+                        5.3s | stepIndex: 3
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_28.html">
+                        Scene 28
+                    </a>
+                    <div class="meta">
+                        今すぐ始めるべき3つのアクション<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_29.html">
+                        Scene 29
+                    </a>
+                    <div class="meta">
+                        1 契約書の全面的な見直し<br>
+                        5.3s | stepIndex: 1
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_30.html">
+                        Scene 30
+                    </a>
+                    <div class="meta">
+                        2 実運送体制管理簿の作成<br>
+                        5.3s | stepIndex: 2
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_31.html">
+                        Scene 31
+                    </a>
+                    <div class="meta">
+                        3 荷主への交渉準備<br>
+                        5.3s | stepIndex: 3
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_32.html">
+                        Scene 32
+                    </a>
+                    <div class="meta">
+                        この法改正はチャンスです<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_33.html">
+                        Scene 33
+                    </a>
+                    <div class="meta">
+                        適切な運賃で関係を正常化<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_34.html">
+                        Scene 34
+                    </a>
+                    <div class="meta">
+                        共に強い運送事業を築きましょう<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="scenes/scene_35.html">
+                        Scene 35
+                    </a>
+                    <div class="meta">
+                        社員教育やセミナーもご相談ください<br>
+                        5.3s | stepIndex: 0
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🎨 マスタースライド</h2>
+            <div class="grid">
+                
+                <div class="card master-card">
+                    <a href="master/slide_1.html" target="_blank">
+                        slide_1
+                    </a>
+                    <div class="meta">全ステップ表示</div>
+                </div>
+                
+                <div class="card master-card">
+                    <a href="master/slide_2.html" target="_blank">
+                        slide_2
+                    </a>
+                    <div class="meta">全ステップ表示</div>
+                </div>
+                
+                <div class="card master-card">
+                    <a href="master/slide_3.html" target="_blank">
+                        slide_3
+                    </a>
+                    <div class="meta">全ステップ表示</div>
+                </div>
+                
+                <div class="card master-card">
+                    <a href="master/slide_4.html" target="_blank">
+                        slide_4
+                    </a>
+                    <div class="meta">全ステップ表示</div>
+                </div>
+                
+                <div class="card master-card">
+                    <a href="master/slide_5.html" target="_blank">
+                        slide_5
+                    </a>
+                    <div class="meta">全ステップ表示</div>
+                </div>
+                
+                <div class="card master-card">
+                    <a href="master/slide_6.html" target="_blank">
+                        slide_6
+                    </a>
+                    <div class="meta">全ステップ表示</div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>⌨️ キーボードショートカット</h2>
+            <div class="folder-structure">
+← (左矢印) ........... 前のシーンへ<br>
+→ (右矢印) ........... 次のシーンへ<br>
+▶ 音声再生ボタン ..... そのシーンの音声を再生/停止
+            </div>
+        </div>
+    </div>
+</body>
+</html>

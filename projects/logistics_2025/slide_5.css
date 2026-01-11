@@ -1,0 +1,49 @@
+section {
+    background: white;
+    color: #243b53;
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    padding: 60px;
+}
+
+h2 {
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 60px;
+    background: #edf2f7;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.action-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.action-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.check {
+    font-size: 50px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text strong {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #2d3748;
+}
+
+.text span {
+    font-size: 26px;
+    color: #718096;
+}

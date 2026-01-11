@@ -1,0 +1,21 @@
+# Task: G-Mark 2025 Video Creation
+
+- [x] Initialize Project
+  - [x] Create directory `projects/g_mark_2025`
+  - [x] Copy standard slide template (`02_std_grid`) to project folder
+- [x] Create Script (`input.json`)
+  - [x] Draft Intro (3 sections)
+  - [x] Draft Body (24 sections) - Who should get G-Mark vs Who shouldn't
+  - [x] Draft Outro (6 sections)
+  - [x] Validate script using `scripts/validate_input.ts`
+- [x] Finalize Slides
+  - [x] Edit `slide_grid.html` to match script structure if needed
+  - [x] Ensure CSS matches requirements
+- [x] Verify
+  - [x] Run `npx tsx scripts/review_preview.ts g_mark_2025`
+  - [x] Manual Verification (Browser Preview with `watch_preview.ts`)
+- [x] Cleanup & Refactoring
+  - [x] Rename `enhance_slides.ts` to `generate_html_previews.ts`
+  - [x] Delete `generate_slides.ts` (Marp legacy)
+  - [x] Delete `reprocess_batch.sh`, `render.ts`, `normalize_audio.ts`, `analyze_audio.ts`, `auto_all.sh`
+  - [x] Delete `upload_youtube.ts` and `auth_youtube.ts`

@@ -1,0 +1,66 @@
+{
+  "project_name": "複数スライドテスト - Part 1",
+  "theme": "テスト",
+  "customScript": {
+    "title": "複数スライド切り替えテスト",
+    "title_split": [
+      "複数スライド切り替えテスト"
+    ],
+    "sections": [
+      {
+        "id": "intro",
+        "text": "これは1枚目のスライドの導入です",
+        "speechText": "これは、1枚目のスライドの、導入部分です。",
+        "speaker": "zundamon",
+        "type": "intro",
+        "slideId": "slide1"
+      },
+      {
+        "id": "s1_item1",
+        "text": "スライド1：項目Aを表示します",
+        "speechText": "1枚目のスライド、項目、Aを表示します。",
+        "speaker": "zundamon",
+        "type": "content",
+        "slideId": "slide1",
+        "step": true
+      },
+      {
+        "id": "s2_intro",
+        "text": "ここから2枚目のスライドに切り替わります",
+        "speechText": "ここから、2枚目の、スライドに切り替わります。",
+        "speaker": "zundamon",
+        "type": "content",
+        "slideId": "slide2"
+      },
+      {
+        "id": "s2_item1",
+        "text": "スライド2：項目Bを表示します",
+        "speechText": "2枚目のスライド、項目、Bを表示します。",
+        "speaker": "zundamon",
+        "type": "content",
+        "slideId": "slide2",
+        "step": true
+      },
+      {
+        "id": "outro",
+        "text": "テスト完了です 正しく切り替わりましたか",
+        "speechText": "テスト完了です。正しく、切り替わりましたか？",
+        "speaker": "zundamon",
+        "type": "outro",
+        "slideId": "slide2"
+      }
+    ],
+    "slides": [
+      {
+        "id": "slide1",
+        "html": "slide_1.html",
+        "css": "slide_1.css"
+      },
+      {
+        "id": "slide2",
+        "html": "slide_2.html",
+        "css": "slide_2.css"
+      }
+    ]
+  }
+}

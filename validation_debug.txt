@@ -1,0 +1,69 @@
+
+🔍 Validating project: g_mark_2025
+
+⚠️  Section 0: Text length (38) exceeds 35 chars. Consider shortening.
+❌ Section 0 [Line 1]: Too long (38 chars). Max 35 allowed.
+   Content: "運送業の皆様 こんにちは あゆみです Gマークのメリット 活用できていますか"
+⚠️  Section 0: Contains spaces.
+⚠️  Section 0: Contains alphabet characters. Consider using Katakana.
+⚠️  Section 1: Text length (37) exceeds 35 chars. Consider shortening.
+❌ Section 1 [Line 1]: Too long (37 chars). Max 35 allowed.
+   Content: "荷主からの信頼や保険料割引だけでなく 実はもっと重要なメリットがあるんです"
+⚠️  Section 1: Contains spaces.
+⚠️  Section 2: Text length (36) exceeds 35 chars. Consider shortening.
+❌ Section 2 [Line 1]: Too long (36 chars). Max 35 allowed.
+   Content: "今回は2025年4月の最新情報をもとに 取得すべき会社の特徴を解説します"
+⚠️  Section 2: Contains spaces.
+⚠️  Section 3: Contains spaces.
+⚠️  Section 3: Contains alphabet characters. Consider using Katakana.
+⚠️  Section 4: Contains spaces.
+⚠️  Section 5: Contains spaces.
+⚠️  Section 5: Contains alphabet characters. Consider using Katakana.
+⚠️  Section 6: Text length (36) exceeds 35 chars. Consider shortening.
+❌ Section 6 [Line 1]: Too long (36 chars). Max 35 allowed.
+   Content: "違反点数の付与後 2年間新たな違反がなければ その点数が消去されるんです"
+⚠️  Section 6: Contains spaces.
+⚠️  Section 7: Contains spaces.
+⚠️  Section 8: Text length (36) exceeds 35 chars. Consider shortening.
+❌ Section 8 [Line 1]: Too long (36 chars). Max 35 allowed.
+   Content: "さらに 人材確保の面でも大きなメリットがあります 詳しく見ていきましょう"
+⚠️  Section 8: Contains spaces.
+⚠️  Section 9: Contains spaces.
+⚠️  Section 9: Contains alphabet characters. Consider using Katakana.
+⚠️  Section 10: Text length (36) exceeds 35 chars. Consider shortening.
+❌ Section 10 [Line 1]: Too long (36 chars). Max 35 allowed.
+   Content: "特定技能外国人の受け入れには Gマークの取得が前提条件となっているんです"
+⚠️  Section 10: Contains spaces.
+⚠️  Section 10: Contains alphabet characters. Consider using Katakana.
+⚠️  Section 11: Contains spaces.
+⚠️  Section 12: Contains spaces.
+⚠️  Section 13: Contains spaces.
+⚠️  Section 13: Contains alphabet characters. Consider using Katakana.
+⚠️  Section 14: Text length (36) exceeds 35 chars. Consider shortening.
+❌ Section 14 [Line 1]: Too long (36 chars). Max 35 allowed.
+   Content: "もちろん 従来通り損害保険料の割引も受けられるので 経費削減に直結します"
+⚠️  Section 14: Contains spaces.
+⚠️  Section 16: Text length (36) exceeds 35 chars. Consider shortening.
+❌ Section 16 [Line 1]: Too long (36 chars). Max 35 allowed.
+   Content: "Gマークを取得すると IT機器を使った「遠隔地での点呼」が可能になります"
+⚠️  Section 16: Contains spaces.
+⚠️  Section 16: Contains alphabet characters. Consider using Katakana.
+⚠️  Section 17: Contains spaces.
+⚠️  Section 18: Contains spaces.
+⚠️  Section 19: Contains spaces.
+⚠️  Section 20: Contains spaces.
+⚠️  Section 21: Contains spaces.
+⚠️  Section 21: Contains alphabet characters. Consider using Katakana.
+⚠️  Section 22: Contains spaces.
+⚠️  Section 23: Contains spaces.
+⚠️  Section 24: Contains spaces.
+⚠️  Section 25: Contains spaces.
+⚠️  Section 26: Contains spaces.
+⚠️  Section 26: Contains alphabet characters. Consider using Katakana.
+⚠️  Section 27: Contains spaces.
+⚠️  Section 27: Contains alphabet characters. Consider using Katakana.
+⚠️  Section 29: Contains spaces.
+⚠️  Section 30: Contains spaces.
+⚠️  Current content section count (29) is not a multiple of 6. (Recommended for standard format)
+
+🚨 Validation failed. Please fix the errors above.

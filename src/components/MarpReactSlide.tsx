@@ -141,25 +141,35 @@ strong {
 interface MarpReactSlideProps {
     htmlContent?: string;
     customCss?: string;
-    steps?: number[];
-    highlightStep?: number;
+    steps?: number[]; // Legacy for backward compatibility
+    highlightStep?: number; // Legacy
+    stepIndex?: number; // Current active step (New)
 }
 
-export const MarpReactSlide: React.FC<MarpReactSlideProps> = ({ htmlContent, customCss, steps = [], highlightStep = Infinity }) => {
+export const MarpReactSlide: React.FC<MarpReactSlideProps> = ({ htmlContent, customCss, steps = [], highlightStep = Infinity, stepIndex = 0 }) => {
     const frame = useCurrentFrame();
 
-    // Determine visibility based on current frame and steps using dynamic mapping
-    // steps[i] -> Show Item i+1
-    const dynamicStyles = steps.map((stepFrame, index) => {
-        const itemIndex = index + 1;
-        const show = frame >= stepFrame;
-        // Use attribute selector to match IDs starting with "item-N" (e.g. item-1_L, item-1_R)
-        return show ? `[id^="item-${itemIndex}"] { opacity: 1 !important; transform: none !important; }` : '';
-    }).join('\n');
+    // Use either explicit stepIndex (preferred) or infer from frame steps (legacy)
+    let activeStep = stepIndex;
+    if (activeStep === 0 && steps.length > 0) {
+        steps.forEach((stepFrame, index) => {
+            if (frame >= stepFrame) {
+                activeStep = index + 1;
+            }
+        });
+    }
+
+    // Dynamic visibility styles
+    // Items with ID "item-N" (or starting with "item-N") are visible if N <= activeStep
+    const visibilityStyles = Array.from({ length: 20 }, (_, i) => i + 1)
+        .map(i => {
+            const show = i <= activeStep;
+            return show ? `[id^="item-${i}"] { opacity: 1 !important; transform: none !important; }` : '';
+        }).join('\n');
 
     const showHighlight = frame >= highlightStep;
     const highlightStyle = showHighlight ? '.highlight-text::after { width: 100% !important; }' : '';
-    const finalDynamicStyles = dynamicStyles + highlightStyle;
+    const finalDynamicStyles = visibilityStyles + highlightStyle;
 
     return (
         <AbsoluteFill>

@@ -1,0 +1,236 @@
+{
+  "project_name": "logistics_2025",
+  "theme": "logistics",
+  "customScript": {
+    "title": "物流2法改正 対応できていますか？",
+    "title_split": [
+      "物流2法改正",
+      "対応できていますか？"
+    ],
+    "sections": [
+      {
+        "type": "image",
+        "text": "こんにちは あゆみです",
+        "slideId": "slide_1"
+      },
+      {
+        "type": "image",
+        "text": "運送会社の社長 担当者の皆様",
+        "slideId": "slide_1"
+      },
+      {
+        "type": "image",
+        "text": "2025年問題を乗り越えて日々奮闘中",
+        "slideId": "slide_1"
+      },
+      {
+        "type": "image",
+        "text": "しかし本当の戦いはこれからです",
+        "slideId": "slide_1"
+      },
+      {
+        "type": "image",
+        "text": "業界の根幹を揺るがす法改正が施行",
+        "slideId": "slide_1"
+      },
+      {
+        "type": "image",
+        "text": "荷主との関係 多重下請けにメス",
+        "slideId": "slide_1"
+      },
+      {
+        "type": "image",
+        "text": "運送事業者に重い管理責任も",
+        "slideId": "slide_1"
+      },
+      {
+        "type": "image",
+        "text": "今日は実務の視点から解説します",
+        "slideId": "slide_1"
+      },
+      {
+        "type": "image",
+        "text": "なぜ今このタイミングで法改正なのか",
+        "slideId": "slide_2"
+      },
+      {
+        "type": "image",
+        "text": "時間外労働の上限規制という現実",
+        "slideId": "slide_2",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "従来の働き方では事業が立ち行かない",
+        "slideId": "slide_2",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "日本の物流が崩壊する危機感から",
+        "slideId": "slide_2"
+      },
+      {
+        "type": "image",
+        "text": "取引の不透明さや荷主の姿勢に",
+        "slideId": "slide_2"
+      },
+      {
+        "type": "image",
+        "text": "法律でメスを入れる決断をした",
+        "slideId": "slide_2",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "運送事業者に直接関わる事業法",
+        "slideId": "slide_3"
+      },
+      {
+        "type": "image",
+        "text": "絶対に抑えるべき3つのポイント",
+        "slideId": "slide_3"
+      },
+      {
+        "type": "image",
+        "text": "ポイント1 契約の書面化義務",
+        "slideId": "slide_3",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "荷待ち時間や荷役時間を明確に記載",
+        "slideId": "slide_3",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "正当な料金を請求できる武器に",
+        "slideId": "slide_3",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "ポイント2 実運送体制管理簿",
+        "slideId": "slide_3",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "下請け構造を可視化 管理責任厳格化",
+        "slideId": "slide_3",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "ポイント3 軽貨物事業者への規制",
+        "slideId": "slide_3",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "黒ナンバーにも義務 言い訳不可",
+        "slideId": "slide_3",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "荷主側にも大きな変化を求めます",
+        "slideId": "slide_4"
+      },
+      {
+        "type": "image",
+        "text": "流通業務効率化法 協力の努力義務",
+        "slideId": "slide_4",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "荷待ち削減 物流統括管理者の選任",
+        "slideId": "slide_4",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "荷主も物流の当事者として責任を問われる時代に",
+        "slideId": "slide_4",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "今すぐ始めるべき3つのアクション",
+        "slideId": "slide_5"
+      },
+      {
+        "type": "image",
+        "text": "1 契約書の全面的な見直し",
+        "slideId": "slide_5",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "2 実運送体制管理簿の作成",
+        "slideId": "slide_5",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "3 荷主への交渉準備",
+        "slideId": "slide_5",
+        "step": true
+      },
+      {
+        "type": "image",
+        "text": "この法改正はチャンスです",
+        "slideId": "slide_6"
+      },
+      {
+        "type": "image",
+        "text": "適切な運賃で関係を正常化",
+        "slideId": "slide_6"
+      },
+      {
+        "type": "image",
+        "text": "共に強い運送事業を築きましょう",
+        "slideId": "slide_6"
+      },
+      {
+        "type": "image",
+        "text": "社員教育やセミナーもご相談ください",
+        "slideId": "slide_6"
+      }
+    ],
+    "slides": [
+      {
+        "id": "slide_1",
+        "html": "slide_1.html",
+        "css": "slide_1.css"
+      },
+      {
+        "id": "slide_2",
+        "html": "slide_2.html",
+        "css": "slide_2.css"
+      },
+      {
+        "id": "slide_3",
+        "html": "slide_3.html",
+        "css": "slide_3.css"
+      },
+      {
+        "id": "slide_4",
+        "html": "slide_4.html",
+        "css": "slide_4.css"
+      },
+      {
+        "id": "slide_5",
+        "html": "slide_5.html",
+        "css": "slide_5.css"
+      },
+      {
+        "id": "slide_6",
+        "html": "slide_6.html",
+        "css": "slide_6.css"
+      }
+    ]
+  }
+}

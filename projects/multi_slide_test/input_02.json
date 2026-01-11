@@ -1,0 +1,41 @@
+{
+    "project_name": "複数スライドテスト - Part 2",
+    "theme": "テスト",
+    "customScript": {
+        "title": "複数スライド切り替えテスト",
+        "slides": [
+            {
+                "id": "slide2",
+                "html": "slide_2.html",
+                "css": "slide_2.css"
+            }
+        ],
+        "sections": [
+            {
+                "id": "s2_intro",
+                "text": "ここから2枚目のスライドに切り替わります",
+                "speechText": "ここから、2枚目の、スライドに切り替わります。",
+                "speaker": "zundamon",
+                "type": "content",
+                "slideId": "slide2"
+            },
+            {
+                "id": "s2_item1",
+                "text": "スライド2：項目Bを表示します",
+                "speechText": "2枚目のスライド、項目、Bを表示します。",
+                "speaker": "zundamon",
+                "type": "content",
+                "slideId": "slide2",
+                "step": true
+            },
+            {
+                "id": "outro",
+                "text": "テスト完了です 正しく切り替わりましたか",
+                "speechText": "テスト完了です。正しく、切り替わりましたか？",
+                "speaker": "zundamon",
+                "type": "outro",
+                "slideId": "slide2"
+            }
+        ]
+    }
+}

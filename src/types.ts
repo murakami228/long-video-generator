@@ -12,6 +12,9 @@ export type Scene = {
   // For 'slide' type
   markdown?: string;      // Markdown content for Marp
   step?: boolean;         // For slide animation steps
+  slideHtml?: string;     // Per-scene HTML (New)
+  customCss?: string;     // Per-scene CSS (New)
+  stepIndex?: number;     // Step number for ID-based visibility (New)
 };
 
 export type Captions = {

@@ -1,0 +1,55 @@
+section {
+    background: #1a365d;
+    color: white;
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    padding: 60px;
+}
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #90cdf4;
+}
+
+.points-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.point-box {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    align-items: center;
+    border-left: 10px solid #4299e1;
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.point-num {
+    font-size: 60px;
+    font-weight: 900;
+    margin-right: 40px;
+    color: #63b3ed;
+    opacity: 0.5;
+}
+
+.point-content h3 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.point-content p {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #e2e8f0;
+}
+
+/* Visibility rules are handled by MarpReactSlide's stepIndex [id^="item-N"] styles */
+/* But we can define the default hidden state here if we want more control */
+/* However, the !important in MarpReactSlide will override the display:none */

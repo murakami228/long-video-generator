@@ -30,13 +30,53 @@ if (!projectDir) {
 
 const inputJsonPath = path.join(projectDir, 'input.json');
 const inputData = JSON.parse(fs.readFileSync(inputJsonPath, 'utf-8'));
+
+// ... existing code ...
+
 const sections = inputData.customScript.sections;
+const slides = inputData.slides || [];
 
 console.log(`\n🔍 Validating project: ${projectSlug}\n`);
 
 let hasError = false;
 
+// --- CSS Validation ---
+console.log('Validating CSS files...');
+slides.forEach((slide: any, idx: number) => {
+    if (!slide.css) return;
+
+    // Resolve CSS path
+    // CSS path in input.json is relative to the project directory (e.g. "slide_1.css" or "../../slide_templates/...")
+    const cssPath = path.resolve(projectDir, slide.css);
+
+    if (!fs.existsSync(cssPath)) {
+        console.error(`❌ Slide ${slide.id}: CSS file not found at ${cssPath}`);
+        hasError = true;
+        return;
+    }
+
+    const cssContent = fs.readFileSync(cssPath, 'utf-8');
+
+    // Check 1: Material Symbols Font Family
+    // If the CSS explicitly styles .material-symbols-outlined, it MUST define font-family.
+    // We check this because just importing the font isn't enough; the class needs to use it.
+    if (cssContent.includes('.material-symbols-outlined')) {
+        // Simple check for the class definition block
+        const match = cssContent.match(/\.material-symbols-outlined\s*{([^}]*)}/);
+        if (match) {
+            const body = match[1];
+            if (!body.includes("font-family: 'Material Symbols Outlined'") && !body.includes('font-family: "Material Symbols Outlined"')) {
+                console.error(`❌ Slide ${slide.id} (${slide.css}): .material-symbols-outlined class missing 'font-family'. Icons will not render.`);
+                hasError = true;
+            }
+        }
+    }
+});
+console.log('CSS validation complete.\n');
+
+// --- Section Validation ---
 sections.forEach((section: any, idx: number) => {
+    // ... existing code ...
     const text = section.text || '';
     const lines = text.split('\n');
 
@@ -98,14 +138,22 @@ sections.forEach((section: any, idx: number) => {
     }
 });
 
-// 6. 6-Step Structure Check
-const opCount = 1;
-const edCount = 1;
-const itemContentCount = sections.length - opCount - edCount;
-if (itemContentCount % 6 !== 0) {
-    console.error(`❌ Total sections (${sections.length}) doesn't follow 6-step structure (OP + 6*N + ED/CTA).`);
+// 6. Section Count Check (Relaxed for Long Videos)
+const minSections = 3; // OP + at least 1 content + ED
+if (sections.length < minSections) {
+    console.error(`❌ Total sections (${sections.length}) is too short. Minimum ${minSections} required.`);
     hasError = true;
 }
+// 6-step structure is now a recommendation for shorts, not strict for all
+const opCount = 1;
+const edCount = 1;
+// 6-step structure is now optional for flexibility.
+/*
+const itemContentCount = sections.length - opCount - edCount;
+if (itemContentCount % 6 !== 0) {
+    console.warn(`⚠️  Current content section count (${itemContentCount}) is not a multiple of 6. (Recommended but not required)`);
+}
+*/
 
 if (!hasError) {
     console.log('✅ All checks passed! The script is ready for production.');

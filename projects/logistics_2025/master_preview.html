@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics 2025 Master Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #2d3748;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+            gap: 40px;
+        }
+
+        .slide-card {
+            background: #1a202c;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide-header {
+            padding: 10px 20px;
+            background: #4a5568;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            /* 16:9 Aspect Ratio */
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1920px;
+            height: 1080px;
+            border: none;
+            transform: scale(0.3125);
+            /* 600 / 1920 */
+            transform-origin: top left;
+        }
+
+        .controls {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #4a5568;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Logistics 2025 - All Slides Preview</h1>
+    <div class="controls">
+        Slide Styles are loaded from individual .css files.
+    </div>
+
+    <div class="preview-grid">
+        <!-- Slide 1 -->
+        <div class="slide-card">
+            <div class="slide-header">Slide 1: Intro</div>
+            <div class="iframe-container">
+                <iframe srcdoc="
+                    <html>
+                        <head><link rel='stylesheet' href='slide_1.css'></head>
+                        <body><section></section></body>
+                    </html>
+                " id="iframe-1"></iframe>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide-card">
+            <div class="slide-header">Slide 2: Background</div>
+            <div class="iframe-container">
+                <iframe srcdoc="
+                    <html>
+                        <head><link rel='stylesheet' href='slide_2.css'></head>
+                        <body><section></section></body>
+                    </html>
+                " id="iframe-2"></iframe>
+            </div>
+        </div>
+
+        <!-- Slide 3 (Steps) -->
+        <div class="slide-card">
+            <div class="slide-header">Slide 3: 3 Points (Step 3 shown)</div>
+            <div class="iframe-container">
+                <iframe srcdoc="
+                    <html>
+                        <head>
+                            <link rel='stylesheet' href='slide_3.css'>
+                            <style>[id^='item-'] { opacity: 1 !important; transform: none !important; }</style>
+                        </head>
+                        <body><section></section></body>
+                    </html>
+                " id="iframe-3"></iframe>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide-card">
+            <div class="slide-header">Slide 4: Efficiency Law</div>
+            <div class="iframe-container">
+                <iframe srcdoc="
+                    <html>
+                        <head><link rel='stylesheet' href='slide_4.css'></head>
+                        <body><section></section></body>
+                    </html>
+                " id="iframe-4"></iframe>
+            </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide-card">
+            <div class="slide-header">Slide 5: Actions</div>
+            <div class="iframe-container">
+                <iframe srcdoc="
+                    <html>
+                        <head><link rel='stylesheet' href='slide_5.css'></head>
+                        <body><section></section></body>
+                    </html>
+                " id="iframe-5"></iframe>
+            </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="slide-card">
+            <div class="slide-header">Slide 6: Ending</div>
+            <div class="iframe-container">
+                <iframe srcdoc="
+                    <html>
+                        <head><link rel='stylesheet' href='slide_6.css'></head>
+                        <body><section></section></body>
+                    </html>
+                " id="iframe-6"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slides = [
+            { id: 1, html: 'slide_1.html' },
+            { id: 2, html: 'slide_2.html' },
+            { id: 3, html: 'slide_3.html' },
+            { id: 4, html: 'slide_4.html' },
+            { id: 5, html: 'slide_5.html' },
+            { id: 6, html: 'slide_6.html' }
+        ];
+
+        async function loadContent() {
+            for (const slide of slides) {
+                try {
+                    const response = await fetch(slide.html);
+                    const html = await response.text();
+                    const iframe = document.getElementById(`iframe-${slide.id}`);
+                    const doc = iframe.contentDocument || iframe.contentWindow.document;
+                    const section = doc.querySelector('section');
+                    if (section) section.innerHTML = html;
+                } catch (e) {
+                    console.error('Failed to load', slide.html, e);
+                }
+            }
+        }
+        window.onload = loadContent;
+    </script>
+</body>
+
+</html>
