@@ -49,9 +49,15 @@
     - 例: タイトル「Zen Kaku Gothic New」、本文「Noto Sans JP」
 
 
-### 2-2. レイアウトパターンの選定
-スライドの内容に最適なレイアウトを選びます。「全て同じリスト」にするのはNGです。
-**具体的な実装パターンは `docs/slide_design_patterns.md` を参照してください。**
+### 2-2. レイアウトパターンの選定 (CoT Recommendation)
+スライドの品質を安定させるため、いきなりコードを書かず、**まず以下の「デザイン設計プロセス」を思考（出力）してください。**
+
+1.  **各スライドの目的定義**: 「このスライドは何を伝えるものか？（比較？手順？警告？）」
+2.  **パターンの決定**: `docs/slide_design_patterns.md` から最適なものを1つ選ぶ。
+3.  **情報マッピング**: テキストデータをパターンのどのパーツ（Main Item, Sub Item, Badge etc.）に当てはめるか決める。
+
+**例:**
+> "Slide 3 is about cost breakdown. Pattern: Calculation. 'Building' -> Item 1, 'Vehicle' -> Item 2..."
 
 | レイアウト名 | 適したコンテンツ | 特徴 |
 | :--- | :--- | :--- |
